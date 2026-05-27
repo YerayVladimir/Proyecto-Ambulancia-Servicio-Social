@@ -6,12 +6,12 @@ public class movimientoJugador : MonoBehaviour
 {
     public float velocidad = 5f;
 
-    void Update()
+    private void Update()
     {
-        float movimientoX = Input.GetAxis("Horizontal"); // A, D, Flechas izquierda/derecha
-        float movimientoZ = Input.GetAxis("Vertical");   // W, S, Flechas arriba/abajo
+        float movimientoX = Input.GetAxis("Horizontal"); // A, D, flechas izquierda/derecha
+        float movimientoZ = Input.GetAxis("Vertical");   // W, S, flechas arriba/abajo
 
-        Vector3 movimiento = new Vector3(movimientoX, 0, movimientoZ);
+        Vector3 movimiento = new Vector3(movimientoX, 0f, movimientoZ);
 
         transform.Translate(movimiento.normalized * velocidad * Time.deltaTime);
     }

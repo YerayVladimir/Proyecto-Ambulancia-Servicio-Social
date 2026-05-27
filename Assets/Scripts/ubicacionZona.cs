@@ -12,6 +12,7 @@ public class ubicacionZona : MonoBehaviour
             objetoVisual.SetActive(false);
         }
     }
+
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
