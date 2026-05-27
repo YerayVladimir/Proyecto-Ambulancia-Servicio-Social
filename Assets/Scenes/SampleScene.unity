@@ -151,9 +151,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d9a6077b1ffd7b4ca9453d56656ab5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlacementUI
-  progressText: {fileID: 1047762357}
-  errorTextObject: {fileID: 2000277979}
-  totalObjects: 2
+  textoProgreso: {fileID: 1047762357}
+  objetoTextoError: {fileID: 2000277979}
+  totalObjetos: 2
 --- !u!4 &38140025
 Transform:
   m_ObjectHideFlags: 0
@@ -323,7 +323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CameraMovement
   velocidad: 5
   sensibilidadMouse: 300
-  playerBody: {fileID: 1879479776}
+  cuerpoJugador: {fileID: 1879479776}
 --- !u!114 &330585549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -336,10 +336,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5333a0384e9fe0b41b49082bcb96bf57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::grabber
-  grabDistance: 3
-  moveSpeed: 15
-  holdPoint: {fileID: 1904563693}
-  placementUI: {fileID: 38140024}
+  distaciaAgarre: 3
+  velociadadMovimiento: 15
+  puntoDeSujecion: {fileID: 1904563693}
+  interfazPosicionamiento: {fileID: 38140024}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1052,10 +1052,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73f2e7df239d8df40aa7e6c57789f24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GrabbableObject
-  objectID: cubo
-  correctlyPlaced: 0
-  startPosition: {x: 0, y: 0, z: 0}
-  startRotation: {x: 0, y: 0, z: 0, w: 0}
+  objetosColocados: cubo
+  colocadoCorrectamente: 0
+  posicionInicial: {x: 0, y: 0, z: 0}
+  rotacionInicial: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &757587410
 GameObject:
   m_ObjectHideFlags: 0
@@ -1770,10 +1770,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73f2e7df239d8df40aa7e6c57789f24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GrabbableObject
-  objectID: esfera
-  correctlyPlaced: 0
-  startPosition: {x: 0, y: 0, z: 0}
-  startRotation: {x: 0, y: 0, z: 0, w: 0}
+  objetosColocados: esfera
+  colocadoCorrectamente: 0
+  posicionInicial: {x: 0, y: 0, z: 0}
+  rotacionInicial: {x: 0, y: 0, z: 0, w: 0}
 --- !u!54 &1051502777
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2084,8 +2084,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 234d763a667732542846edb73ba764c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlacementZone
-  zoneID: cubo
-  visual: {fileID: 661426057}
+  idZona: cubo
+  objetoVisual: {fileID: 661426057}
 --- !u!4 &1233512233
 Transform:
   m_ObjectHideFlags: 0
@@ -2169,8 +2169,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 234d763a667732542846edb73ba764c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlacementZone
-  zoneID: esfera
-  visual: {fileID: 804365347}
+  idZona: esfera
+  objetoVisual: {fileID: 804365347}
 --- !u!1 &1670450170 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7609145667655734672, guid: 51b1d4e5e7be9e7498aac1a72196b4e4, type: 3}
@@ -2428,7 +2428,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1904563693}
   m_Layer: 0
-  m_Name: HoldPoint
+  m_Name: puntoDeSujeccion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

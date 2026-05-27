@@ -1,21 +1,20 @@
 using UnityEngine;
 
-public class PlacementZone : MonoBehaviour
+public class ubicacionZona : MonoBehaviour
 {
-    public string zoneID;
-    public GameObject visual;
+    public string idZona;
+    public GameObject objetoVisual;
 
     private void Start()
     {
-        if (visual != null)
+        if (objetoVisual != null)
         {
-            visual.SetActive(false);
+            objetoVisual.SetActive(false);
         }
     }
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
-
         Gizmos.DrawWireCube(transform.position,transform.localScale);
     }
 }
