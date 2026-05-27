@@ -3,7 +3,7 @@ using UnityEngine;
 public class movimientoCamara : MonoBehaviour
 {
     [Header("Movimiento")]
-    public float velocidad = 200f;
+    public float velocidad = 10f;
 
     [Header("Mouse")]
     public float sensibilidadMouse = 200f;
@@ -28,8 +28,7 @@ public class movimientoCamara : MonoBehaviour
         float movimientoX = Input.GetAxis("Horizontal");
         float movimientoZ = Input.GetAxis("Vertical");
 
-        Vector3 movimiento = cuerpoJugador.right * movimientoX +
-                             cuerpoJugador.forward * movimientoZ;
+        Vector3 movimiento = cuerpoJugador.right * movimientoX + cuerpoJugador.forward * movimientoZ;
 
         cuerpoJugador.Translate(movimiento * velocidad * Time.deltaTime, Space.World);
     }

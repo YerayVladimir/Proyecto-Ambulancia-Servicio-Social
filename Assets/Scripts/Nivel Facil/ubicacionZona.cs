@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class PlacementZone : MonoBehaviour
+public class ubicacionZona : MonoBehaviour
 {
-    public string zoneID;
+    public string zonaID;
     public GameObject visual;
 
     private void Start()

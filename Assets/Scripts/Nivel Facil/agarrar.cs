@@ -76,9 +76,9 @@ public class agarrar : MonoBehaviour
 
         foreach (ubicacionZona zona in zonas)
         {
-            if (zona.objetoVisual != null)
+            if (zona.visual != null)
             {
-                zona.objetoVisual.SetActive(zona.idZona == idObjeto);
+                zona.visual.SetActive(zona.zonaID == idObjeto);
             }
         }
     }
@@ -89,9 +89,9 @@ public class agarrar : MonoBehaviour
 
         foreach (ubicacionZona zona in zonas)
         {
-            if (zona.objetoVisual != null)
+            if (zona.visual != null)
             {
-                zona.objetoVisual.SetActive(false);
+                zona.visual.SetActive(false);
             }
         }
     }
@@ -115,7 +115,7 @@ public class agarrar : MonoBehaviour
 
             if (zona != null)
             {
-                if (zona.idZona == objetoAgarrableActual.objetosColocados)
+                if (zona.zonaID == objetoAgarrableActual.objetosColocados)
                 {
                     zonaCorrecta = true;
 
@@ -125,9 +125,9 @@ public class agarrar : MonoBehaviour
 
                     objetoAgarrado.transform.rotation = zona.transform.rotation;
 
-                    if (zona.objetoVisual != null)
+                    if (zona.visual != null)
                     {
-                        zona.objetoVisual.SetActive(false);
+                        zona.visual.SetActive(false);
                     }
 
                     if (interfazPosicionamiento != null)
