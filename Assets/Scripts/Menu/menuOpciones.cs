@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class menuOpciones : MonoBehaviour
 {
@@ -11,6 +12,14 @@ public class menuOpciones : MonoBehaviour
     [Header("Audio")]
     [SerializeField] private AudioMixer audioMixerSonido;
     [SerializeField] private AudioMixer audioMixerMusica;
+
+    public Slider sliderSensibilidad;
+    void Start()
+    {
+        float sensibilidad = PlayerPrefs.GetFloat("sensibilidad", 2f);
+
+        sliderSensibilidad.value = sensibilidad;
+    }
     public void abrirOpciones(GameObject menuQueAbre)
     {
         menuAnterior = menuQueAbre;
@@ -49,5 +58,9 @@ public class menuOpciones : MonoBehaviour
     public void resolucion(int index)
     {
         QualitySettings.SetQualityLevel(index);
+    }
+    public void sensibilidad(float valor)
+    {
+        PlayerPrefs.SetFloat("sensibilidad", valor);
     }
 }

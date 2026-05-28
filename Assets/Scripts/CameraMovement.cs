@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
+    float sensibilidad;
+
     [Header("Movimiento")]
     public float velocidad = 200f;
 
@@ -21,6 +23,12 @@ public class CameraMovement : MonoBehaviour
     {
         MovimientoJugador();
         MovimientoMouse();
+       /* sensibilidad = PlayerPrefs.GetFloat("sensibilidad", 2f);
+
+        float mouseX = Input.GetAxis("Mouse X") * sensibilidad;
+        float mouseY = Input.GetAxis("Mouse Y") * sensibilidad;
+
+        transform.Rotate(-mouseY, mouseX, 0);*/
     }
 
     void MovimientoJugador()
