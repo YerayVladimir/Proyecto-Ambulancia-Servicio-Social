@@ -9,16 +9,16 @@ EditorBuildSettings:
     path: Assets/Scenes/menuPrincipal.unity
     guid: a5ce295cf7970334c868e746aa632329
   - enabled: 1
-    path: Assets/Scenes/nivelUno.unity
-    guid: 305518c32e7d385408e659ca6c4840c5
-  - enabled: 1
-    path: Assets/Scenes/nivelDos.unity
-    guid: 8a14e982fe2743745b00f4f8d853374a
-  - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/EscenaSaul.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/nivelTres.unity
+    path: Assets/Scenes/Nivel_Facil.unity
+    guid: 305518c32e7d385408e659ca6c4840c5
+  - enabled: 1
+    path: Assets/Scenes/Nivel_Intermedio.unity
+    guid: 8a14e982fe2743745b00f4f8d853374a
+  - enabled: 1
+    path: Assets/Scenes/Nivel_Dificil.unity
     guid: a7207682ec3a91c4b98bfc756fe65519
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

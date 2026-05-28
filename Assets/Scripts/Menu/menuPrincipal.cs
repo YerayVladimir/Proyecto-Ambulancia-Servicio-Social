@@ -14,4 +14,8 @@ public class menuPrincipal : MonoBehaviour
         Debug.Log("Saliendo del juego...");
         Application.Quit();
     }
+    public void cerrarNiveles()
+    {
+        menuNiveles.SetActive(false);
+    }
 }
