@@ -451,6 +451,7 @@ GameObject:
   m_Component:
   - component: {fileID: 923786263}
   - component: {fileID: 923786262}
+  - component: {fileID: 923786264}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -535,6 +536,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &923786264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923786261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &1160734218
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -726,6 +750,39 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3431057244517277491, guid: 5a52fa8a51eed144ca40e4e55e57ea3b, type: 3}
   m_PrefabInstance: {fileID: 1160734218}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1160734221 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5488451915846944707, guid: 5a52fa8a51eed144ca40e4e55e57ea3b, type: 3}
+  m_PrefabInstance: {fileID: 1160734218}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1160734222 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5521848367431166283, guid: 5a52fa8a51eed144ca40e4e55e57ea3b, type: 3}
+  m_PrefabInstance: {fileID: 1160734218}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1160734223 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1107990849566300939, guid: 5a52fa8a51eed144ca40e4e55e57ea3b, type: 3}
+  m_PrefabInstance: {fileID: 1160734218}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1208243266
 GameObject:
   m_ObjectHideFlags: 0
@@ -761,6 +818,9 @@ MonoBehaviour:
   panelOpciones: {fileID: 1160734219}
   audioMixerSonido: {fileID: 24100000, guid: e4f822e00e6a71040a0994be55114465, type: 2}
   audioMixerMusica: {fileID: 24100000, guid: 9bc09ba86df5018449bb07ea21706292, type: 2}
+  sliderSonido: {fileID: 1160734223}
+  sliderMusica: {fileID: 1160734222}
+  sliderSensibilidad: {fileID: 1160734221}
 --- !u!114 &1208243268
 MonoBehaviour:
   m_ObjectHideFlags: 0
