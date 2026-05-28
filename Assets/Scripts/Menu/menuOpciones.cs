@@ -13,12 +13,30 @@ public class menuOpciones : MonoBehaviour
     [SerializeField] private AudioMixer audioMixerSonido;
     [SerializeField] private AudioMixer audioMixerMusica;
 
+    public Slider sliderSonido;
+    public Slider sliderMusica;
+
     public Slider sliderSensibilidad;
+    /*
+    // LO DEJÉ IGUAL COMO LO TENÍAS
     void Start()
     {
         float sensibilidad = PlayerPrefs.GetFloat("sensibilidad", 2f);
 
         sliderSensibilidad.value = sensibilidad;
+    }
+    */
+    void Start()
+    {
+        float sonidoGuardado = PlayerPrefs.GetFloat("volumenSonido", 0f);
+
+        sliderSonido.value = sonidoGuardado;
+        audioMixerSonido.SetFloat("VolumenSonido", sonidoGuardado);
+
+        float musicaGuardada = PlayerPrefs.GetFloat("volumenMusica", 0f);
+
+        sliderMusica.value = musicaGuardada;
+        audioMixerMusica.SetFloat("VolumenMusica", musicaGuardada);
     }
     public void abrirOpciones(GameObject menuQueAbre)
     {
@@ -44,17 +62,16 @@ public class menuOpciones : MonoBehaviour
     {
         Screen.fullScreen = pantallaCompleta;
     }
-
     public void volumenSonido(float sonido)
     {
         audioMixerSonido.SetFloat("VolumenSonido", sonido);
+        PlayerPrefs.SetFloat("volumenSonido", sonido);
     }
-
     public void volumenMusica(float musica)
     {
         audioMixerMusica.SetFloat("VolumenMusica", musica);
+        PlayerPrefs.SetFloat("volumenMusica", musica);
     }
-
     public void resolucion(int index)
     {
         QualitySettings.SetQualityLevel(index);
