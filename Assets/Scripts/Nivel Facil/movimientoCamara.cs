@@ -3,7 +3,7 @@ using UnityEngine;
 public class movimientoCamara : MonoBehaviour
 {
     [Header("Movimiento")]
-    public float velocidad = 10f;
+    public float velocidad = 2.5f;
 
     [Header("Mouse")]
     public float sensibilidadMouse = 200f;
