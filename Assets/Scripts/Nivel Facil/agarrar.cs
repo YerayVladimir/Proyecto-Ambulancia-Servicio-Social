@@ -107,7 +107,7 @@ public class agarrar : MonoBehaviour
 
         objetoAgarrable objetoAgarrableActual = objetoAgarrado.GetComponent<objetoAgarrable>();
 
-        Collider[] colliders = Physics.OverlapSphere(objetoAgarrado.transform.position,0.5f);
+        Collider[] colliders = Physics.OverlapSphere(objetoAgarrado.transform.position, 0.5f);
 
         foreach (Collider colliderEncontrado in colliders)
         {
@@ -119,20 +119,28 @@ public class agarrar : MonoBehaviour
                 {
                     zonaCorrecta = true;
 
-                    objetoAgarrableActual.colocadoCorrectamente = true;
+                    if (!objetoAgarrableActual.colocadoCorrectamente)
+                    {
+                        objetoAgarrableActual.colocadoCorrectamente = true;
+
+                        if (interfazPosicionamiento != null)
+                        {
+                            interfazPosicionamiento.AddCorrectObject();
+                        }
+                        
+                        objetoAgarrado.tag = "Untagged";
+
+                        
+                        rigidbodyAgarrado.isKinematic = true;
+                        rigidbodyAgarrado.useGravity = false;
+                    }
 
                     objetoAgarrado.transform.position = zona.transform.position;
-
                     objetoAgarrado.transform.rotation = zona.transform.rotation;
 
                     if (zona.visual != null)
                     {
                         zona.visual.SetActive(false);
-                    }
-
-                    if (interfazPosicionamiento != null)
-                    {
-                        interfazPosicionamiento.AddCorrectObject();
                     }
 
                     break;
@@ -143,7 +151,6 @@ public class agarrar : MonoBehaviour
         if (!zonaCorrecta)
         {
             objetoAgarrado.transform.position = objetoAgarrableActual.posicionInicial;
-
             objetoAgarrado.transform.rotation = objetoAgarrableActual.rotacionInicial;
 
             if (interfazPosicionamiento != null)
@@ -156,7 +163,6 @@ public class agarrar : MonoBehaviour
         rigidbodyAgarrado.isKinematic = false;
         rigidbodyAgarrado.drag = 1;
         rigidbodyAgarrado.freezeRotation = false;
-
         rigidbodyAgarrado.velocity = Vector3.zero;
         rigidbodyAgarrado.angularVelocity = Vector3.zero;
 
