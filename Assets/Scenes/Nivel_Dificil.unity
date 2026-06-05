@@ -488,7 +488,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Coloca los objetos en su lugar:  0/20
+  m_text: 'Coloca los objetos en su lugar:  0/47
 
 '
   m_isRightToLeft: 0
@@ -6251,7 +6251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textoProgreso: {fileID: 246896209}
   objetoTextoError: {fileID: 1079161598}
-  totalObjetos: 20
+  totalObjetos: 47
 --- !u!4 &1420277515
 Transform:
   m_ObjectHideFlags: 0
