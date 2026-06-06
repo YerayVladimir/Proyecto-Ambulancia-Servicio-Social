@@ -66,6 +66,7 @@ public class agarrar : MonoBehaviour
                 rigidbodyAgarrado.drag = 10;
                 rigidbodyAgarrado.freezeRotation = true;
                 rigidbodyAgarrado.WakeUp();
+                congelarOtrosObjetos(true);
             }
         }
     }
@@ -168,7 +169,23 @@ public class agarrar : MonoBehaviour
 
         ocultarTodasLasZonas();
 
+        congelarOtrosObjetos(false);
         objetoAgarrado = null;
         rigidbodyAgarrado = null;
+    }
+    void congelarOtrosObjetos(bool congelar)
+    {
+        GameObject[] objetos = GameObject.FindGameObjectsWithTag("drag");
+        foreach (GameObject obj in objetos)
+        {
+            if (obj != objetoAgarrado)
+            {
+                Rigidbody rb = obj.GetComponent<Rigidbody>();
+                if (rb != null)
+                {
+                    rb.isKinematic = congelar;
+                }
+            }
+        }
     }
 }
