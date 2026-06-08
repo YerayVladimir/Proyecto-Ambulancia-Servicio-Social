@@ -16,6 +16,6 @@ public class ubicacionZona : MonoBehaviour
     {
         Gizmos.color = Color.green;
 
-        Gizmos.DrawWireCube(transform.position,transform.localScale);
+        Gizmos.DrawWireCube(transform.position, transform.localScale);
     }
 }
