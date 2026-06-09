@@ -9,10 +9,5 @@ public class NivelesMenu : MonoBehaviour
     {
         SceneManager.LoadScene(nombreNivel);
     }
-
-    public void cambiarNivel(int numeroNivel)
-    {
-        SceneManager.LoadScene(numeroNivel);
-    }
 }
 

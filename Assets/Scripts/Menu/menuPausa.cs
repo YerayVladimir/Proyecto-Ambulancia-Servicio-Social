@@ -5,18 +5,26 @@ public class menuPausa : MonoBehaviour
 {
     public GameObject panelPausa;
     public GameObject panelOpciones;
+    public GameObject puntero;
     public static bool estaPausado;
 
     void Start()
     {
+        Time.timeScale = 1;
         panelPausa.SetActive(false);
+        Debug.Log("menuPausa iniciado");
     }
 
     private void Update()
     {
-        if (Input.GetButtonDown("Cancel"))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Debug.Log("Escape detectado");
+            puntero.SetActive(false);
+            // Hace que el cursor sea visible
+            Cursor.visible = true;
+
+            // Libera el ratón para que pueda moverse por toda la pantalla
+            Cursor.lockState = CursorLockMode.None;
 
             if (panelOpciones.activeSelf)
             {
@@ -47,6 +55,11 @@ public class menuPausa : MonoBehaviour
     public void continuar()
     {
         panelPausa.SetActive(false);
+        puntero.SetActive(true);
+        // Hace que el cursor sea visible
+        Cursor.visible = false;
+        // Libera el ratón para que pueda moverse por toda la pantalla
+        Cursor.lockState = CursorLockMode.Locked;
 
         Time.timeScale = 1;
         estaPausado = false;
@@ -58,6 +71,7 @@ public class menuPausa : MonoBehaviour
     {
         Time.timeScale = 1;
         estaPausado = false;
+        puntero.SetActive(true);
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
@@ -67,7 +81,7 @@ public class menuPausa : MonoBehaviour
     public void menuPrincipal()
     {
         panelPausa.SetActive(false);
-
+        puntero.SetActive(false);
         Time.timeScale = 0f;
         estaPausado = false;
 
