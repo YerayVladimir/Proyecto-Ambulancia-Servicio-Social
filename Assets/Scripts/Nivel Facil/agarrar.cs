@@ -13,7 +13,6 @@ public class agarrar : MonoBehaviour
 
     void Update()
     {
-        // Click izquierdo
         if (Input.GetMouseButtonDown(0))
         {
             if (objetoAgarrado == null)
@@ -26,9 +25,9 @@ public class agarrar : MonoBehaviour
             }
         }
     }
+
     private void FixedUpdate()
     {
-        // Mover objeto
         if (objetoAgarrado != null)
         {
             moverObjeto();
@@ -38,7 +37,6 @@ public class agarrar : MonoBehaviour
     void intentarAgarrar()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
         RaycastHit hit;
 
         if (Physics.Raycast(ray, out hit, distaciaAgarre))
@@ -74,7 +72,6 @@ public class agarrar : MonoBehaviour
     void mostrarSoloZonaCorrecta(string idObjeto)
     {
         ubicacionZona[] zonas = FindObjectsByType<ubicacionZona>(FindObjectsSortMode.None);
-
         foreach (ubicacionZona zona in zonas)
         {
             if (zona.visual != null)
@@ -87,7 +84,6 @@ public class agarrar : MonoBehaviour
     void ocultarTodasLasZonas()
     {
         ubicacionZona[] zonas = FindObjectsByType<ubicacionZona>(FindObjectsSortMode.None);
-
         foreach (ubicacionZona zona in zonas)
         {
             if (zona.visual != null)
@@ -128,12 +124,11 @@ public class agarrar : MonoBehaviour
                         {
                             interfazPosicionamiento.AddCorrectObject();
                         }
-                        
-                        objetoAgarrado.tag = "Untagged";
 
-                        
+                        objetoAgarrado.tag = "Untagged";
                         rigidbodyAgarrado.isKinematic = true;
                         rigidbodyAgarrado.useGravity = false;
+                        objetoAgarrado.GetComponent<Collider>().enabled = false;
                     }
 
                     objetoAgarrado.transform.position = zona.transform.position;
@@ -144,7 +139,11 @@ public class agarrar : MonoBehaviour
                         zona.visual.SetActive(false);
                     }
 
-                    break;
+                    ocultarTodasLasZonas();
+                    congelarOtrosObjetos(false);
+                    objetoAgarrado = null;
+                    rigidbodyAgarrado = null;
+                    return; // <- esto evita que siga ejecutando el código de abajo
                 }
             }
         }
@@ -168,11 +167,11 @@ public class agarrar : MonoBehaviour
         rigidbodyAgarrado.angularVelocity = Vector3.zero;
 
         ocultarTodasLasZonas();
-
         congelarOtrosObjetos(false);
         objetoAgarrado = null;
         rigidbodyAgarrado = null;
     }
+
     void congelarOtrosObjetos(bool congelar)
     {
         GameObject[] objetos = GameObject.FindGameObjectsWithTag("drag");
