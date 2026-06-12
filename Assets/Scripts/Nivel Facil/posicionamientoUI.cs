@@ -7,7 +7,7 @@ public class posicionamientoUI : MonoBehaviour
     public TextMeshProUGUI textoProgreso;
     public GameObject objetoTextoError;
 
-    public int totalObjetos = 47;
+    public int totalObjetos = 48;
 
     private int objetosColocados = 0;
 

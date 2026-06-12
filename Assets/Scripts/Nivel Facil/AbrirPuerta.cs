@@ -7,18 +7,18 @@ public class AbrirPuerta : MonoBehaviour
     public Animator animador;
     public float distanciaActivacion = 3f;
     public Transform jugador;
+    private bool yaAbierta = false;
 
     void Update()
     {
+        if (yaAbierta) return;
+
         float distancia = Vector3.Distance(transform.position, jugador.position);
 
         if (distancia <= distanciaActivacion)
         {
             animador.SetBool("abierta", true);
-        }
-        else
-        {
-            animador.SetBool("abierta", false);
+            yaAbierta = true;
         }
     }
 }
