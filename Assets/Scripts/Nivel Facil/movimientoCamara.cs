@@ -4,17 +4,27 @@ public class movimientoCamara : MonoBehaviour
 {
     [Header("Movimiento")]
     public float velocidad = 2.5f;
+    public float gravedad = -9.81f;
 
     [Header("Mouse")]
     public float sensibilidadMouse = 200f;
-    public Transform cuerpoJugador; // Objeto que rota en Y
+    public Transform cuerpoJugador; // Objeto que rota en Y y tiene el CharacterController
 
     private float rotacionX = 0f;
+    private CharacterController controlador;
+    private Vector3 velocidadVertical;
 
     private void Start()
     {
-        // Bloquea el cursor en el centro de la pantalla
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
+        controlador = cuerpoJugador.GetComponent<CharacterController>();
+
+        if (controlador == null)
+        {
+            Debug.LogError("El objeto asignado como cuerpoJugador no tiene CharacterController.");
+        }
     }
 
     private void Update()
@@ -25,12 +35,22 @@ public class movimientoCamara : MonoBehaviour
 
     private void moverJugador()
     {
+        if (controlador == null) return;
+
         float movimientoX = Input.GetAxis("Horizontal");
         float movimientoZ = Input.GetAxis("Vertical");
 
         Vector3 movimiento = cuerpoJugador.right * movimientoX + cuerpoJugador.forward * movimientoZ;
 
-        cuerpoJugador.Translate(movimiento * velocidad * Time.deltaTime, Space.World);
+        controlador.Move(movimiento * velocidad * Time.deltaTime);
+
+        if (controlador.isGrounded && velocidadVertical.y < 0)
+        {
+            velocidadVertical.y = -2f;
+        }
+
+        velocidadVertical.y += gravedad * Time.deltaTime;
+        controlador.Move(velocidadVertical * Time.deltaTime);
     }
 
     private void moverMouse()
@@ -41,10 +61,10 @@ public class movimientoCamara : MonoBehaviour
         rotacionX -= mouseY;
         rotacionX = Mathf.Clamp(rotacionX, -90f, 90f);
 
-        // Rotación vertical: mirar arriba y abajo
+        // Rotación vertical: cámara arriba y abajo
         transform.localRotation = Quaternion.Euler(rotacionX, 0f, 0f);
 
-        // Rotación horizontal: girar el cuerpo del jugador
+        // Rotación horizontal: gira el cuerpo del jugador
         cuerpoJugador.Rotate(Vector3.up * mouseX);
     }
 }
