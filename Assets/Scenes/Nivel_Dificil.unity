@@ -5380,6 +5380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 2.5
+  gravedad: -9.81
   sensibilidadMouse: 200
   cuerpoJugador: {fileID: 418080814}
 --- !u!114 &552282486
@@ -13347,6 +13348,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelPausa: {fileID: 613869723}
   panelOpciones: {fileID: 1415654988}
+  puntero: {fileID: 0}
 --- !u!1001 &1948346266
 PrefabInstance:
   m_ObjectHideFlags: 0
