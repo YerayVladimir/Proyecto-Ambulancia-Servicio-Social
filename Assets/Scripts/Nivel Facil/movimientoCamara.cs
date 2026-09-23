@@ -39,7 +39,7 @@ public class movimientoCamara : MonoBehaviour
         float mouseY = Input.GetAxis("Mouse Y") * sensibilidadMouse * Time.deltaTime;
 
         rotacionX -= mouseY;
-        rotacionX = Mathf.Clamp(rotacionX, -90f, 90f);
+        rotacionX = Mathf.Clamp(rotacionX, -45f, 90f);
 
         // Rotación vertical: mirar arriba y abajo
         transform.localRotation = Quaternion.Euler(rotacionX, 0f, 0f);
