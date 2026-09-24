@@ -706,4 +706,4 @@ public class agarrar : MonoBehaviour
             }
         }
     }
-}
+}   
