@@ -10,6 +10,9 @@ public class movimientoCamara : MonoBehaviour
     public float sensibilidadMouse = 200f;
     public Transform cuerpoJugador; // Objeto que rota en Y y tiene el CharacterController
 
+    // Lo activa AsientoVehiculo cuando el jugador esta dentro del carro
+    [HideInInspector] public bool sentado = false;
+
     private float rotacionX = 0f;
     private CharacterController controlador;
     private Vector3 velocidadVertical;
@@ -29,7 +32,12 @@ public class movimientoCamara : MonoBehaviour
 
     private void Update()
     {
-        moverJugador();
+        // Sentado no se camina, pero la camara sigue funcionando
+        if (!sentado)
+        {
+            moverJugador();
+        }
+
         moverMouse();
     }
 
