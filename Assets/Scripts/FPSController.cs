@@ -12,6 +12,9 @@ public class FPSController : MonoBehaviour
     public float limiteVertical = 80f;
     public Camera camaraFPS;
 
+    // Lo activa AsientoVehiculo cuando el jugador esta dentro del carro
+    [HideInInspector] public bool sentado = false;
+
     private CharacterController controller;
     private float rotacionVertical = 0f;
 
@@ -45,6 +48,9 @@ public class FPSController : MonoBehaviour
 
     void MoverJugador()
     {
+        // Sentado en el carro no se puede caminar, solo mover la camara
+        if (sentado) return;
+
         Vector3 direccion = transform.right * inputMovimiento.x
                           + transform.forward * inputMovimiento.y;
         controller.SimpleMove(direccion * velocidad);

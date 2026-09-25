@@ -455,10 +455,14 @@ public class agarrar : MonoBehaviour
 
     public posicionamientoUI interfazPosicionamiento;
 
+    public AudioSource audioSource;
+    public AudioClip agarrarSound;
+    public AudioClip soltarSound;
+
     private GameObject objetoAgarrado;
     private Rigidbody rigidbodyAgarrado;
 
-    private Collider[] collidersObjeto; //
+    private Collider[] collidersObjeto;
 
     void Update()
     {
@@ -514,6 +518,8 @@ public class agarrar : MonoBehaviour
                 rigidbodyAgarrado.freezeRotation = true;
                 rigidbodyAgarrado.WakeUp();
 
+                audioSource.PlayOneShot(agarrarSound);
+
                 collidersObjeto = objetoAgarrado.GetComponentsInChildren<Collider>();
                 foreach (Collider c in collidersObjeto)
                 {
@@ -562,6 +568,8 @@ public class agarrar : MonoBehaviour
 
     void soltarObjeto()
     {
+        audioSource.PlayOneShot(soltarSound);
+
         bool zonaCorrecta = false;
 
         objetoAgarrable objetoAgarrableActual =
@@ -594,8 +602,6 @@ public class agarrar : MonoBehaviour
 
                         rigidbodyAgarrado.isKinematic = true;
                         rigidbodyAgarrado.useGravity = false;
-
-                        // seguir sin collider (ya colocado)
                     }
 
                     StartCoroutine(MoverAZona(
@@ -639,7 +645,6 @@ public class agarrar : MonoBehaviour
             rigidbodyAgarrado.velocity = Vector3.zero;
             rigidbodyAgarrado.angularVelocity = Vector3.zero;
 
-           
             if (collidersObjeto != null)
             {
                 foreach (Collider c in collidersObjeto)

@@ -1,0 +1,194 @@
+fileFormatVersion: 2
+guid: 7220a6f481a2b774fb3e6098b00069ce
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__blinn43
+    second: {fileID: 2100000, guid: 1a1ec3ebc44b4fd4ea6eed63f7a56933, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__standardSurface4
+    second: {fileID: 2100000, guid: 1e55ba5f07a10504b9c954b2e71a1d47, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rastrillo__termometro_y_tijeras_mayo1_blinn5
+    second: {fileID: 2100000, guid: 4440188f0e990d54ba4d964cbaf37cdc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rastrillo__termometro_y_tijeras_mayo1_lambert10
+    second: {fileID: 2100000, guid: 090cf37d0e6d7194ca3a39cef67a074e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rastrillo__termometro_y_tijeras_mayo1_lambert11
+    second: {fileID: 2100000, guid: 0b2a8530cf5f8744c9123309e334438f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rastrillo__termometro_y_tijeras_mayo1_lambert12
+    second: {fileID: 2100000, guid: cb5c993fdb993294dbe3d5116f4e6d30, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rastrillo__termometro_y_tijeras_mayo1_lambert13
+    second: {fileID: 2100000, guid: 943829d95a1ee7e4e926e14f1affb04f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rastrillo__termometro_y_tijeras_mayo1_lambert14
+    second: {fileID: 2100000, guid: 6d8eca3979d4b7d48a6143d7b6b4fed0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rastrillo__termometro_y_tijeras_mayo1_lambert15
+    second: {fileID: 2100000, guid: 1c73b21dc1fe1bc499d396c2b26d92cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rastrillo__termometro_y_tijeras_mayo1_lambert16
+    second: {fileID: 2100000, guid: 20d00e741c59c2b4c9c3d89154ff4f84, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rastrillo__termometro_y_tijeras_mayo1_lambert17
+    second: {fileID: 2100000, guid: 14f55aeccbea949468f6ce3f0f9ce07f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rastrillo__termometro_y_tijeras_mayo1_lambert18
+    second: {fileID: 2100000, guid: ec87910eaff399f40b3a8068cbd98e96, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rastrillo__termometro_y_tijeras_mayo1_lambert19
+    second: {fileID: 2100000, guid: 570c58cba8d744843b8328ae510a6255, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rastrillo__termometro_y_tijeras_mayo1_lambert9
+    second: {fileID: 2100000, guid: 607445570fbec804990a7af924348285, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rastrillo__termometro_y_tijeras_mayo1_rastrilloobj_Material__14
+    second: {fileID: 2100000, guid: 8d7c2492dce56f14d85c1546330bc400, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rastrillo__termometro_y_tijeras_mayo1_rastrilloobj_Material__15
+    second: {fileID: 2100000, guid: 66d5cd826d7bd9940a764d7f6886de7b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rastrillo__termometro_y_tijeras_mayo_blinn4
+    second: {fileID: 2100000, guid: edde919c3b227684ba818279d0ba3eb9, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
