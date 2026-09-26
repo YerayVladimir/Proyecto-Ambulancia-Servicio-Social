@@ -9529,6 +9529,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelPausa: {fileID: 140941563}
   panelOpciones: {fileID: 1160734219}
+  puntero: {fileID: 0}
 --- !u!1 &801407700
 GameObject:
   m_ObjectHideFlags: 0
@@ -14913,6 +14914,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distaciaAgarre: 3
   velociadadMovimiento: 15
+  tiempoMovimientoZona: 2
   puntoDeSujecion: {fileID: 1364022251}
   interfazPosicionamiento: {fileID: 1718824362}
 --- !u!114 &1342518719
@@ -14928,6 +14930,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 2.5
+  gravedad: -9.81
   sensibilidadMouse: 200
   cuerpoJugador: {fileID: 1456840613}
 --- !u!114 &1342518720
