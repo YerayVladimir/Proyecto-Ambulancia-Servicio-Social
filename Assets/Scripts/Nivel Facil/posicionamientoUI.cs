@@ -17,6 +17,8 @@ public class posicionamientoUI : MonoBehaviour
 
     private Coroutine mensajeErrorCoroutine;
 
+    [Header("Configuración del Temporizador")]
+    public bool usarTemporizador = true; 
 
     private void Start()
     {
@@ -28,12 +30,22 @@ public class posicionamientoUI : MonoBehaviour
             objetoTextoError.SetActive(false);
         }
 
+        if (textoTemporizador != null)
+        {
+            textoTemporizador.gameObject.SetActive(usarTemporizador);
+        }
+
         StartCoroutine(inicioTemporizador());
 
     }
 
     private IEnumerator inicioTemporizador()
     {
+        if (!usarTemporizador)
+        {
+            yield break; // No inicia el temporizador, sale de la corrutina de inmediato
+        }
+
         yield return new WaitForSeconds(5f);
 
         while (tiempoRestante > 0 && !juegoTerminado)
@@ -112,7 +124,7 @@ public class posicionamientoUI : MonoBehaviour
             textoTemporizador.text = string.Format("{0:00}:{1:00}", minutos, segundos);
         }
     }
-
+    
     // Método centralizado para manejar el fin de la partida
     private void FinalizarJuego(bool gano)
     {

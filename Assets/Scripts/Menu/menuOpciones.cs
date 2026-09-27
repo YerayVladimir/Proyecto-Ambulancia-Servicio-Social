@@ -30,7 +30,7 @@ public class menuOpciones : MonoBehaviour
     {
         float sonidoGuardado = PlayerPrefs.GetFloat("volumenSonido", 0f);
 
-        sliderSonido.value = sonidoGuardado;
+        sliderSonido.value = sonidoGuardado; //marca error 
         audioMixerSonido.SetFloat("VolumenSonido", sonidoGuardado);
 
         float musicaGuardada = PlayerPrefs.GetFloat("volumenMusica", 0f);

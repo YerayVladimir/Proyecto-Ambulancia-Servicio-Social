@@ -10285,6 +10285,7 @@ MonoBehaviour:
   sensibilidad: 0.1
   limiteVertical: 80
   camaraFPS: {fileID: 1837389229}
+  sentado: 0
 --- !u!114 &877334064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10302,6 +10303,9 @@ MonoBehaviour:
   tiempoMovimientoZona: 2
   puntoDeSujecion: {fileID: 1739991854}
   interfazPosicionamiento: {fileID: 1140801755}
+  audioSource: {fileID: 0}
+  agarrarSound: {fileID: 0}
+  soltarSound: {fileID: 0}
 --- !u!1 &891624418
 GameObject:
   m_ObjectHideFlags: 0
@@ -22287,6 +22291,9 @@ MonoBehaviour:
   tiempoMovimientoZona: 2
   puntoDeSujecion: {fileID: 1086134747}
   interfazPosicionamiento: {fileID: 1140801755}
+  audioSource: {fileID: 938409687}
+  agarrarSound: {fileID: 8300000, guid: 057b3d955ae2e3841ad07c3c44f74094, type: 3}
+  soltarSound: {fileID: 8300000, guid: 1ed4eaa62ce4fd54f97dcde8e4c1d0cf, type: 3}
 --- !u!114 &1928312019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22303,6 +22310,7 @@ MonoBehaviour:
   gravedad: -9.81
   sensibilidadMouse: 500
   cuerpoJugador: {fileID: 938409682}
+  sentado: 0
 --- !u!114 &1928312020
 MonoBehaviour:
   m_ObjectHideFlags: 0
