@@ -463,6 +463,8 @@ public class agarrar : MonoBehaviour
 
     private Collider[] collidersObjeto;
 
+    public zonasManger zonasManger;
+
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -534,11 +536,13 @@ public class agarrar : MonoBehaviour
     {
         ubicacionZona[] zonas = FindObjectsByType<ubicacionZona>(FindObjectsSortMode.None);
 
+        bool ayudaPermitida = zonasManger == null || zonasManger.ZonaHabilitada(idObjeto);
+
         foreach (ubicacionZona zona in zonas)
         {
             if (zona.visual != null)
             {
-                zona.visual.SetActive(zona.zonaID == idObjeto);
+                zona.visual.SetActive(zona.zonaID == idObjeto && ayudaPermitida);
             }
         }
     }

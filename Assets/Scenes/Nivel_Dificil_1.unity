@@ -10355,6 +10355,7 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   agarrarSound: {fileID: 0}
   soltarSound: {fileID: 0}
+  zonasManger: {fileID: 0}
 --- !u!1 &891624418
 GameObject:
   m_ObjectHideFlags: 0
@@ -12047,6 +12048,52 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1056490009}
   m_Mesh: {fileID: 7331499119954448031, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+--- !u!1 &1056929753
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1056929755}
+  - component: {fileID: 1056929754}
+  m_Layer: 0
+  m_Name: ZonaManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1056929754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056929753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6b1293523e25df4eb667578574b6ed9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modo: 2
+  porcentajeZonas: 0.5
+--- !u!4 &1056929755
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056929753}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.8482, y: 1.269, z: -1.1289997}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1073509154
 GameObject:
   m_ObjectHideFlags: 0
@@ -23482,6 +23529,7 @@ MonoBehaviour:
   audioSource: {fileID: 938409687}
   agarrarSound: {fileID: 8300000, guid: 057b3d955ae2e3841ad07c3c44f74094, type: 3}
   soltarSound: {fileID: 8300000, guid: 1ed4eaa62ce4fd54f97dcde8e4c1d0cf, type: 3}
+  zonasManger: {fileID: 1056929754}
 --- !u!114 &1928312019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26126,3 +26174,4 @@ SceneRoots:
   - {fileID: 1245785684}
   - {fileID: 2092735635}
   - {fileID: 1545151116}
+  - {fileID: 1056929755}
