@@ -13,11 +13,18 @@ public class posicionamientoUI : MonoBehaviour
 
     public float tiempoRestante = 60.0f;
     public TextMeshProUGUI textoTemporizador;
+    public PanelRetroalimentacion panelRetroalimentacion;
+    private int errores = 0;
+
+public int Errores
+{
+    get { return errores; }
+}
     private bool juegoTerminado = false;
 
     private Coroutine mensajeErrorCoroutine;
 
-    [Header("Configuración del Temporizador")]
+    [Header("Configuraciï¿½n del Temporizador")]
     public bool usarTemporizador = true; 
 
     private void Start()
@@ -59,13 +66,13 @@ public class posicionamientoUI : MonoBehaviour
         {
             tiempoRestante = 0;
             ActualizarTextoTemporizador(tiempoRestante);
-            FinalizarJuego(false); // Se acabó el tiempo (Derrota)
+            FinalizarJuego(false); // Se acabï¿½ el tiempo (Derrota)
         }
     }
 
     public void AddCorrectObject()
     {
-        if (juegoTerminado) return; // Evita seguir sumando si ya terminó
+        if (juegoTerminado) return; // Evita seguir sumando si ya terminï¿½
 
         objetosColocados++;
 
@@ -78,7 +85,7 @@ public class posicionamientoUI : MonoBehaviour
 
         if (objetosColocados >= totalObjetos)
         {
-            FinalizarJuego(true); // Terminó porque completó el objetivo (Victoria)
+            FinalizarJuego(true); // Terminï¿½ porque completï¿½ el objetivo (Victoria)
         }
     }
 
@@ -124,21 +131,34 @@ public class posicionamientoUI : MonoBehaviour
             textoTemporizador.text = string.Format("{0:00}:{1:00}", minutos, segundos);
         }
     }
+    public void RegistrarError()
+{
+    if (juegoTerminado) return;
+
+    errores++;
+
+    Debug.Log("Errores: " + errores);
+
+    ShowIncorrectMessage();
+}
     
-    // Método centralizado para manejar el fin de la partida
+    // Mï¿½todo centralizado para manejar el fin de la partida
     private void FinalizarJuego(bool gano)
     {
-        juegoTerminado = true;
+       juegoTerminado = true;
 
-        if (gano)
-        {
-            Debug.Log("¡Ganaste! Todos los objetos colocados a tiempo.");
-            // Aquí activamos la pantalla de resultados 
-        }
-        else
-        {
-            Debug.Log("¡Perdiste! Se agotó el tiempo.");
-            // Aquí activariamos la pantalla de los resultados igualmente
-        }
+    if (gano)
+    {
+        Debug.Log("Â¡Ganaste! Todos los objetos colocados a tiempo.");
+    }
+    else
+    {
+        Debug.Log("Â¡Perdiste! Se agotÃ³ el tiempo.");
+    }
+
+    if (panelRetroalimentacion != null)
+    {
+       panelRetroalimentacion.MostrarRetroalimentacion(gano, errores);
+    }
     }
 }
