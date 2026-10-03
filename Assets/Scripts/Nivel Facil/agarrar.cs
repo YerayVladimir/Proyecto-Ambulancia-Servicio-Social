@@ -143,7 +143,7 @@ public class agarrar : MonoBehaviour
                     congelarOtrosObjetos(false);
                     objetoAgarrado = null;
                     rigidbodyAgarrado = null;
-                    return; // <- esto evita que siga ejecutando el código de abajo
+                    return; // <- esto evita que siga ejecutando el cï¿½digo de abajo
                 }
             }
         }
@@ -596,10 +596,10 @@ public class agarrar : MonoBehaviour
                     {
                         objetoAgarrableActual.colocadoCorrectamente = true;
 
-                        if (interfazPosicionamiento != null)
-                        {
-                            interfazPosicionamiento.AddCorrectObject();
-                        }
+                     if (interfazPosicionamiento != null)
+{
+    interfazPosicionamiento.RegistrarError();
+}
 
                         objetoAgarrado.tag = "Untagged";
 
