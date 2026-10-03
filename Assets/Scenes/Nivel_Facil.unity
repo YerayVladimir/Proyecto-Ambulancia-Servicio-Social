@@ -11399,7 +11399,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 21.7, y: 0.70000076}
+  m_AnchoredPosition: {x: 21.699951, y: 0.7000122}
   m_SizeDelta: {x: -27.325, y: -25.203}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &922883126
@@ -18899,6 +18899,14 @@ PrefabInstance:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 142860167}
+    - target: {fileID: 1848134874656009167, guid: 5a52fa8a51eed144ca40e4e55e57ea3b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.9987516
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848134874656009167, guid: 5a52fa8a51eed144ca40e4e55e57ea3b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2146737667583747916, guid: 5a52fa8a51eed144ca40e4e55e57ea3b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -19047,6 +19055,18 @@ PrefabInstance:
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 142860167}
+    - target: {fileID: 6830298540201675277, guid: 5a52fa8a51eed144ca40e4e55e57ea3b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.9987516
+      objectReference: {fileID: 0}
+    - target: {fileID: 6830298540201675277, guid: 5a52fa8a51eed144ca40e4e55e57ea3b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6830298540201675277, guid: 5a52fa8a51eed144ca40e4e55e57ea3b, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.9987516
+      objectReference: {fileID: 0}
     - target: {fileID: 8381851571953701556, guid: 5a52fa8a51eed144ca40e4e55e57ea3b, type: 3}
       propertyPath: m_Name
       value: menuOpciones
@@ -25085,7 +25105,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Presiona la tecla "E" para salir
+  m_text: 'Presiona la tecla "G" para salir
 
 '
   m_isRightToLeft: 0

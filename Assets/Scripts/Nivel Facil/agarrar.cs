@@ -25,6 +25,7 @@ public class agarrar : MonoBehaviour
 
     void Update()
     {
+        if (menuPausa.estaPausado)return;
         if (Input.GetMouseButtonDown(0))
         {
             if (objetoAgarrado == null)

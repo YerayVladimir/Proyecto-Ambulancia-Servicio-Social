@@ -26,7 +26,7 @@ public class CamaraCabina : MonoBehaviour
         rotacionX = Mathf.Clamp(rotacionX, -20f, 20f);
         rotacionY = Mathf.Clamp(rotacionY, -50f, 50f);
         transform.localRotation = rotacionBase * Quaternion.Euler(rotacionX, rotacionY, 0f);
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.G))
         {
             panelCloseUp.SalirCabina();
             return;
