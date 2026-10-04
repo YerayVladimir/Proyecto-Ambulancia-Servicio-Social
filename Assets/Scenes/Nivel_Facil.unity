@@ -14998,7 +14998,7 @@ MonoBehaviour:
   textoProgreso: {fileID: 922883127}
   objetoTextoError: {fileID: 973481018}
   totalObjetos: 47
-  tiempoRestante: 5
+  tiempoRestante: 30
   textoTemporizador: {fileID: 570024856}
   panelRetroalimentacion: {fileID: 737762042}
   usarTemporizador: 1
