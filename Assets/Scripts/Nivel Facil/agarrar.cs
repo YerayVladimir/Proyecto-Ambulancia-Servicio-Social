@@ -143,7 +143,7 @@ public class agarrar : MonoBehaviour
                     congelarOtrosObjetos(false);
                     objetoAgarrado = null;
                     rigidbodyAgarrado = null;
-                    return; // <- esto evita que siga ejecutando el cï¿½digo de abajo
+                    return; // <- esto evita que siga ejecutando el código de abajo
                 }
             }
         }
@@ -492,6 +492,7 @@ public class agarrar : MonoBehaviour
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
+
         if (Physics.Raycast(ray, out hit, distaciaAgarre))
         {
             if (hit.collider.CompareTag("drag"))
@@ -527,14 +528,6 @@ public class agarrar : MonoBehaviour
                 }
 
                 congelarOtrosObjetos(true);
-            }
-            if (hit.collider.CompareTag("entry"))
-            {
-                //-0.045, 2.022, -9.679
-            }
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                //-0.001999779, 1.34, 0.228
             }
         }
     }

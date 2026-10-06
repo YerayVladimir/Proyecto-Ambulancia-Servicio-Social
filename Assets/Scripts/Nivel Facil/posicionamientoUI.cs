@@ -5,7 +5,7 @@ using UnityEngine;
 public class posicionamientoUI : MonoBehaviour
 {
     public TextMeshProUGUI textoProgreso;
-    public TextMeshProUGUI textoEntradaCabina;
+    public GameObject objetoTextoError;
 
     public int totalObjetos = 48;
 
@@ -16,8 +16,8 @@ public class posicionamientoUI : MonoBehaviour
     private bool juegoTerminado = false;
 
     private Coroutine mensajeErrorCoroutine;
-    public GameObject objetoTextoError;
-    [Header("Configuraciï¿½n del Temporizador")]
+
+    [Header("Configuración del Temporizador")]
     public bool usarTemporizador = true; 
 
     private void Start()
@@ -59,13 +59,13 @@ public class posicionamientoUI : MonoBehaviour
         {
             tiempoRestante = 0;
             ActualizarTextoTemporizador(tiempoRestante);
-            FinalizarJuego(false); // Se acabï¿½ el tiempo (Derrota)
+            FinalizarJuego(false); // Se acabó el tiempo (Derrota)
         }
     }
 
     public void AddCorrectObject()
     {
-        if (juegoTerminado) return; // Evita seguir sumando si ya terminï¿½
+        if (juegoTerminado) return; // Evita seguir sumando si ya terminó
 
         objetosColocados++;
 
@@ -78,7 +78,7 @@ public class posicionamientoUI : MonoBehaviour
 
         if (objetosColocados >= totalObjetos)
         {
-            FinalizarJuego(true); // Terminï¿½ porque completï¿½ el objetivo (Victoria)
+            FinalizarJuego(true); // Terminó porque completó el objetivo (Victoria)
         }
     }
 
@@ -125,20 +125,20 @@ public class posicionamientoUI : MonoBehaviour
         }
     }
     
-    // Mï¿½todo centralizado para manejar el fin de la partida
+    // Método centralizado para manejar el fin de la partida
     private void FinalizarJuego(bool gano)
     {
         juegoTerminado = true;
 
         if (gano)
         {
-            Debug.Log("ï¿½Ganaste! Todos los objetos colocados a tiempo.");
-            // Aquï¿½ activamos la pantalla de resultados 
+            Debug.Log("¡Ganaste! Todos los objetos colocados a tiempo.");
+            // Aquí activamos la pantalla de resultados 
         }
         else
         {
-            Debug.Log("ï¿½Perdiste! Se agotï¿½ el tiempo.");
-            // Aquï¿½ activariamos la pantalla de los resultados igualmente
+            Debug.Log("¡Perdiste! Se agotó el tiempo.");
+            // Aquí activariamos la pantalla de los resultados igualmente
         }
     }
 }
