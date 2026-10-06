@@ -21,9 +21,11 @@ public class agarrar : MonoBehaviour
     private Collider[] collidersObjeto;
 
     public zonasManger zonasManger;
+    public panelCloseUp panelCloseUp;
 
     void Update()
     {
+        if (menuPausa.estaPausado)return;
         if (Input.GetMouseButtonDown(0))
         {
             if (objetoAgarrado == null)
@@ -85,6 +87,10 @@ public class agarrar : MonoBehaviour
                 }
 
                 congelarOtrosObjetos(true);
+            }
+            if (hit.collider.CompareTag("panel"))
+            {
+                panelCloseUp.EntrarCabina();
             }
         }
     }
