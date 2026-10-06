@@ -159,6 +159,7 @@ public class agarrar : MonoBehaviour
                     {
                         objetoAgarrableActual.colocadoCorrectamente = true;
 
+                        // CAMBIO 1: zona correcta suma al progreso
                         if (interfazPosicionamiento != null)
                         {
                             interfazPosicionamiento.AddCorrectObject();
@@ -199,9 +200,10 @@ public class agarrar : MonoBehaviour
             objetoAgarrado.transform.rotation =
                 objetoAgarrableActual.rotacionInicial;
 
+            // CAMBIO 2: zona incorrecta cuenta el error y muestra el mensaje
             if (interfazPosicionamiento != null)
             {
-                interfazPosicionamiento.ShowIncorrectMessage();
+                interfazPosicionamiento.RegistrarError();
             }
 
             rigidbodyAgarrado.useGravity = true;
@@ -278,4 +280,4 @@ public class agarrar : MonoBehaviour
             }
         }
     }
-}   
+}
