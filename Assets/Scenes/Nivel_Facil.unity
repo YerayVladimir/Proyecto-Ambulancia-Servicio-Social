@@ -3369,7 +3369,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jugador: {fileID: 1928312019}
   camara: {fileID: 1928312022}
-  pasos: {fileID: 0}
+  pasos: {fileID: 938409686}
   scriptsMovimientoADesactivar: []
   puntoAsiento: {fileID: 747834175}
   puntoSalida: {fileID: 1277629925}
@@ -20636,7 +20636,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jugador: {fileID: 1928312019}
   camara: {fileID: 1928312022}
-  pasos: {fileID: 0}
+  pasos: {fileID: 938409686}
   scriptsMovimientoADesactivar: []
   puntoAsiento: {fileID: 1589158878}
   puntoSalida: {fileID: 1377053946}
