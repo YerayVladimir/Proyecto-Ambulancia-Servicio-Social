@@ -11733,7 +11733,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animador: {fileID: 937225316}
   distanciaActivacion: 2
-  jugador: {fileID: 0}
+  jugador: {fileID: 938409682}
 --- !u!95 &937225316
 Animator:
   serializedVersion: 5
@@ -22426,7 +22426,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animador: {fileID: 1707390586}
   distanciaActivacion: 2
-  jugador: {fileID: 0}
+  jugador: {fileID: 938409682}
 --- !u!95 &1707390586
 Animator:
   serializedVersion: 5
