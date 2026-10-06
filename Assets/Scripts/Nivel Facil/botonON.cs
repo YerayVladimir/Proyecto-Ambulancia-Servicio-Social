@@ -17,12 +17,6 @@ public class botonON : MonoBehaviour
             animator.SetTrigger("Pulsar");
         }
 
-        // Si quieres reproducir el audio al dar clic
-        if (audioSource != null)
-        {
-            audioSource.Play();
-        }
-
         if (sirenaEncendida)
         {
             audioSource.clip = perillaSirena.ModoActual;
