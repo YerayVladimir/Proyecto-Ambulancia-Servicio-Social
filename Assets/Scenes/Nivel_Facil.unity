@@ -12135,7 +12135,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 21.699951, y: 0.7000122}
+  m_AnchoredPosition: {x: 21.699951, y: 0.70007324}
   m_SizeDelta: {x: -27.325, y: -25.203}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &922883126
@@ -12166,7 +12166,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Coloca los objetos en su lugar:  0/48
+  m_text: 'Coloca los objetos en su lugar:  0/49
+
 
 '
   m_isRightToLeft: 0
@@ -12931,7 +12932,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Objeto colocado incorreactamente
+  m_text: Objeto colocado incorrectamente
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -14780,7 +14781,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textoProgreso: {fileID: 922883127}
   objetoTextoError: {fileID: 973481018}
-  totalObjetos: 47
+  totalObjetos: 49
   tiempoRestante: 60
   textoTemporizador: {fileID: 570024856}
   panelRetroalimentacion: {fileID: 2126964402}
@@ -23039,6 +23040,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sensibilidad: 2
+  velocidad: 1.5
+  minZ: -0.5
+  maxZ: 0.5
   panelCloseUp: {fileID: 763463330}
 --- !u!114 &1785183445
 MonoBehaviour:
@@ -23101,7 +23105,7 @@ Transform:
   m_GameObject: {fileID: 1785183442}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.027, y: 0.098, z: -0.061}
+  m_LocalPosition: {x: 0.027, y: 0.139, z: -0.061}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23968,6 +23972,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 06c5695f2fc7a89459c26aecb3fe5942, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a5cf3c1a561a47e4dbe645016cf2d269, type: 2}
     - target: {fileID: 919132149155446097, guid: 06c5695f2fc7a89459c26aecb3fe5942, type: 3}
       propertyPath: m_Name
       value: Mesa_para_objetos
