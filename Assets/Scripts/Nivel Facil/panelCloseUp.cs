@@ -5,12 +5,13 @@ using UnityEngine;
 public class panelCloseUp : MonoBehaviour
 {
     public Camera camaraPrincipal, camaraCabina;
-    public GameObject mensaje;
+    public GameObject mensaje, moverse;
     public void EntrarCabina()
     {
         camaraPrincipal.gameObject.SetActive(false);
         camaraCabina.gameObject.SetActive(true);
         mensaje.SetActive(true);
+        moverse.SetActive(true);
     }
 
     public void SalirCabina()
@@ -18,5 +19,6 @@ public class panelCloseUp : MonoBehaviour
         camaraCabina.gameObject.SetActive(false);
         camaraPrincipal.gameObject.SetActive(true);
         mensaje.SetActive(false);
+        moverse.SetActive(false);
     }
 }
