@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class botonON : MonoBehaviour
 {
+    public Animator animator;
     public AudioSource audioSource;
     public controladorSirena perillaSirena;
 
@@ -10,6 +11,17 @@ public class botonON : MonoBehaviour
     void OnMouseDown()
     {
         sirenaEncendida = !sirenaEncendida;
+
+        if (animator != null)
+        {
+            animator.SetTrigger("Pulsar");
+        }
+
+        // Si quieres reproducir el audio al dar clic
+        if (audioSource != null)
+        {
+            audioSource.Play();
+        }
 
         if (sirenaEncendida)
         {

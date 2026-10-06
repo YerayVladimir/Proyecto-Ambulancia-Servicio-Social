@@ -8,14 +8,20 @@ public class movimientoCamara : MonoBehaviour
 
     [Header("Mouse")]
     public float sensibilidadMouse = 200f;
-    public Transform cuerpoJugador; // Objeto que rota en Y y tiene el CharacterController
+    public Transform cuerpoJugador;
 
-    // Lo activa AsientoVehiculo cuando el jugador esta dentro del carro
+    [Header("Agacharse")]
+    public float alturaAgachado = 0.7f;
+    public float velocidadAgacharse = 8f;
+
     [HideInInspector] public bool sentado = false;
 
     private float rotacionX = 0f;
     private CharacterController controlador;
     private Vector3 velocidadVertical;
+
+    private Vector3 posicionCamaraNormal;
+    private Vector3 posicionCamaraAgachado;
 
     private void Start()
     {
@@ -28,17 +34,24 @@ public class movimientoCamara : MonoBehaviour
         {
             Debug.LogError("El objeto asignado como cuerpoJugador no tiene CharacterController.");
         }
+
+        // Guardamos la posición original de la cámara
+        posicionCamaraNormal = transform.localPosition;
+
+        // Creamos la posición agachada
+        posicionCamaraAgachado = posicionCamaraNormal;
+        posicionCamaraAgachado.y -= alturaAgachado;
     }
 
     private void Update()
     {
-        // Sentado no se camina, pero la camara sigue funcionando
         if (!sentado)
         {
             moverJugador();
         }
 
         moverMouse();
+        agacharse();
     }
 
     private void moverJugador()
@@ -69,10 +82,30 @@ public class movimientoCamara : MonoBehaviour
         rotacionX -= mouseY;
         rotacionX = Mathf.Clamp(rotacionX, -45f, 90f);
 
-        // Rotación vertical: cámara arriba y abajo
         transform.localRotation = Quaternion.Euler(rotacionX, 0f, 0f);
 
-        // Rotación horizontal: gira el cuerpo del jugador
         cuerpoJugador.Rotate(Vector3.up * mouseX);
+    }
+
+    private void agacharse()
+    {
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            // Agachado
+            transform.localPosition = Vector3.Lerp(
+                transform.localPosition,
+                posicionCamaraAgachado,
+                velocidadAgacharse * Time.deltaTime
+            );
+        }
+        else
+        {
+            // Normal
+            transform.localPosition = Vector3.Lerp(
+                transform.localPosition,
+                posicionCamaraNormal,
+                velocidadAgacharse * Time.deltaTime
+            );
+        }
     }
 }

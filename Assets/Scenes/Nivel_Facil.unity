@@ -5600,7 +5600,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2432187990065654984, guid: 3102bfac1227633459cca2fe68be1c32, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5319965527368832065, guid: 3102bfac1227633459cca2fe68be1c32, type: 3}
       propertyPath: m_Pivot.x
@@ -24749,6 +24749,8 @@ MonoBehaviour:
   gravedad: -9.81
   sensibilidadMouse: 500
   cuerpoJugador: {fileID: 938409682}
+  alturaAgachado: 0.7
+  velocidadAgacharse: 8
   sentado: 0
 --- !u!114 &1928312020
 MonoBehaviour:
