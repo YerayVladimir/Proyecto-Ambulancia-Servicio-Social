@@ -79,5 +79,7 @@ public class menuOpciones : MonoBehaviour
     public void sensibilidad(float valor)
     {
         PlayerPrefs.SetFloat("sensibilidad", valor);
+        float sensibilidadGuardada = PlayerPrefs.GetFloat("sensibilidad", 200f);
+        sliderSensibilidad.value = sensibilidadGuardada;
     }
 }

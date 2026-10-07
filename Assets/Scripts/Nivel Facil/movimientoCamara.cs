@@ -28,6 +28,9 @@ public class movimientoCamara : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
+        // NUEVO: carga la sensibilidad guardada
+        sensibilidadMouse = PlayerPrefs.GetFloat("sensibilidad", 200f);
+
         controlador = cuerpoJugador.GetComponent<CharacterController>();
 
         if (controlador == null)
@@ -76,6 +79,9 @@ public class movimientoCamara : MonoBehaviour
 
     private void moverMouse()
     {
+        // NUEVO: lee la sensibilidad en vivo
+        sensibilidadMouse = PlayerPrefs.GetFloat("sensibilidad", 200f);
+
         float mouseX = Input.GetAxis("Mouse X") * sensibilidadMouse * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * sensibilidadMouse * Time.deltaTime;
 
@@ -91,7 +97,6 @@ public class movimientoCamara : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            // Agachado
             transform.localPosition = Vector3.Lerp(
                 transform.localPosition,
                 posicionCamaraAgachado,
@@ -100,7 +105,6 @@ public class movimientoCamara : MonoBehaviour
         }
         else
         {
-            // Normal
             transform.localPosition = Vector3.Lerp(
                 transform.localPosition,
                 posicionCamaraNormal,
