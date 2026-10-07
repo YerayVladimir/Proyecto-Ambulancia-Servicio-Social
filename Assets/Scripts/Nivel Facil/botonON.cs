@@ -10,6 +10,8 @@ public class botonON : MonoBehaviour
 
     void OnMouseDown()
     {
+        Debug.Log("CLICK en botonON: " + gameObject.name);
+
         sirenaEncendida = !sirenaEncendida;
 
         if (animator != null)
@@ -17,8 +19,20 @@ public class botonON : MonoBehaviour
             animator.SetTrigger("Pulsar");
         }
 
+        if (audioSource == null)
+        {
+            Debug.LogWarning("Falta asignar el Audio Source");
+            return;
+        }
+
         if (sirenaEncendida)
         {
+            if (perillaSirena == null || perillaSirena.ModoActual == null)
+            {
+                Debug.LogWarning("perillaSirena no está asignada o ModoActual está vacío (no hay clip)");
+                return;
+            }
+
             audioSource.clip = perillaSirena.ModoActual;
             audioSource.loop = true;
             audioSource.Play();
