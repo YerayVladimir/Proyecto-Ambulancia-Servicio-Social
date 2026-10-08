@@ -203,9 +203,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: "Ox\xEDgeno Grande"
+  descripcion: "El tanque principal de ox\xEDgeno instalado en la ambulancia, con
+    capacidad para dar ox\xEDgeno durante todo el traslado."
+  imagenObjeto: {fileID: 21300000, guid: 3e2b714c74ec84d4ab2a06d4467d71f2, type: 3}
 --- !u!4 &13619704 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7048148758624978485, guid: 388b740f7906b1b4ab4bb69f4a0b7cb3, type: 3}
@@ -524,9 +525,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: Jeringas 3,5 y 10
+  descripcion: "Jeringas de distintos tama\xF1os para administrar medicamentos o
+    extraer l\xEDquidos, seg\xFAn la dosis que se requiera."
+  imagenObjeto: {fileID: 21300000, guid: 3b13de4f6ac32c848b130d2eead3c968, type: 3}
 --- !u!1 &43976241
 GameObject:
   m_ObjectHideFlags: 0
@@ -692,9 +694,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: Linterna
+  descripcion: Da luz en escenas nocturnas o con poca visibilidad para poder trabajar
+    con seguridad.
+  imagenObjeto: {fileID: 21300000, guid: b931d65a4bf73c74ba0234d0e6d07815, type: 3}
 --- !u!1 &50791277 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9003711056650681285, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
@@ -776,9 +779,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: Conos
+  descripcion: "Conos de se\xF1alizaci\xF3n adicionales, usados junto con los traficonos
+    para delimitar la zona de atenci\xF3n."
+  imagenObjeto: {fileID: 21300000, guid: 135b936d0f2ffd442a8c226138413b80, type: 3}
 --- !u!1 &53781254 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8228101822775502868, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
@@ -860,9 +864,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: Desfribilador
+  descripcion: "Aplica una descarga el\xE9ctrica controlada para intentar regresar
+    el coraz\xF3n a un ritmo normal en un paro cardiaco."
+  imagenObjeto: {fileID: 21300000, guid: 90313f3a927b6fa498373ec43063125c, type: 3}
 --- !u!1 &57868725
 GameObject:
   m_ObjectHideFlags: 0
@@ -4181,6 +4186,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8366593306564554475, guid: c0e97f19953fb03498aeafd901a7e627, type: 3}
   m_PrefabInstance: {fileID: 433956139}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &231946695 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4721759014001524604, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+  m_PrefabInstance: {fileID: 1383262342}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &231946699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231946695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreObj: "Ara\xF1a"
+  descripcion: "Juego de correas que se cruza sobre el cuerpo del paciente para sujetarlo
+    firmemente a la camilla r\xEDgida durante el traslado."
+  imagenObjeto: {fileID: 21300000, guid: 198781e3f6e53574782ff5cd6728601c, type: 3}
 --- !u!1 &240253029 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8829131863759860387, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
@@ -4838,14 +4864,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: Traficono
+  descripcion: "Conos que se colocan alrededor de la escena para advertir a otros
+    conductores y proteger el \xE1rea de trabajo."
+  imagenObjeto: {fileID: 21300000, guid: bc26871f9bf933f47b34b2d2bc14db1b, type: 3}
 --- !u!4 &278983890 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6336849652929022019, guid: 76bacfd4206e862408cb8d500e4e99a1, type: 3}
   m_PrefabInstance: {fileID: 619670933}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &279513249 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -398925132133204948, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+  m_PrefabInstance: {fileID: 1383262342}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &279513253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279513249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreObj: "Camilla r\xEDgida"
+  descripcion: Tabla plana y firme que se usa para inmovilizar la columna de pacientes
+    con sospecha de trauma antes de moverlos.
+  imagenObjeto: {fileID: 21300000, guid: abe26acf379f2c44bb4ae057f2d347f8, type: 3}
 --- !u!1 &280029610 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6530750710581249120, guid: 388b740f7906b1b4ab4bb69f4a0b7cb3, type: 3}
@@ -5267,9 +5315,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: "S\xE1bana t\xE9rmica"
+  descripcion: "Manta reflejante que ayuda a conservar el calor corporal de un paciente
+    en shock o expuesto al fr\xEDo."
+  imagenObjeto: {fileID: 21300000, guid: 0b8fc4f5a95538a4a808a7d60e22b85d, type: 3}
 --- !u!1 &299879035
 GameObject:
   m_ObjectHideFlags: 0
@@ -5835,9 +5884,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: Mascarillas con filtro HEPA
+  descripcion: "Mascarillas que filtran part\xEDculas muy peque\xF1as, usadas para
+    proteger a la tripulaci\xF3n de agentes infecciosos en el aire."
+  imagenObjeto: {fileID: 21300000, guid: 43b5a7d3dec68b546a807900dc6b30fc, type: 3}
 --- !u!1 &362278808
 GameObject:
   m_ObjectHideFlags: 0
@@ -6124,9 +6174,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: Gato
+  descripcion: Se usa para levantar la ambulancia del suelo y poder cambiar una llanta
+    ponchada.
+  imagenObjeto: {fileID: 21300000, guid: 3d085fc2dfee2264e80f89ee5742baac, type: 3}
+--- !u!1 &381811344 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1097273794704112498, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+  m_PrefabInstance: {fileID: 1383262342}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &381811348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381811344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreObj: Camilla
+  descripcion: La camilla principal con ruedas y base plegable, la que se usa para
+    subir y bajar al paciente de la ambulancia.
+  imagenObjeto: {fileID: 21300000, guid: ef0ed306b185aa24f82a85f855b8dc1a, type: 3}
 --- !u!1 &387827978 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4431431707022625080, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
@@ -6386,9 +6458,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: Vendas 5,10,20 y 30
+  descripcion: "Rollos de venda de distintos anchos, usados para sujetar ap\xF3sitos
+    o inmovilizar una zona lesionada seg\xFAn el tama\xF1o que se necesite."
+  imagenObjeto: {fileID: 21300000, guid: 96b84d57ac5dc074ba479b0cd8050717, type: 3}
 --- !u!1 &388813300
 GameObject:
   m_ObjectHideFlags: 0
@@ -7718,6 +7791,21 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!114 &486722283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486722273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreObj: "S\xE1banas"
+  descripcion: "S\xE1banas de tela normales, para cubrir al paciente o la camilla."
+  imagenObjeto: {fileID: 21300000, guid: e7b475c8fa10ae54784f0061a5f61a54, type: 3}
 --- !u!1 &490410437
 GameObject:
   m_ObjectHideFlags: 0
@@ -7961,9 +8049,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: "Botiqu\xEDn de ataque"
+  descripcion: "Es el kit que el param\xE9dico agarra primero al llegar a la escena,
+    con lo esencial para actuar en los primeros segundos: guantes, gasas, vendas
+    y un torniquete. Est\xE1 dise\xF1ado para ser ligero y r\xE1pido de abrir."
+  imagenObjeto: {fileID: 21300000, guid: 2a6684809d2316f449f600c08d38fa2a, type: 3}
 --- !u!1001 &499432471
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8440,9 +8530,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: "Bauman\xF3metro"
+  descripcion: "El brazalete y man\xF3metro que se usan junto al estetoscopio para
+    medir la presi\xF3n arterial."
+  imagenObjeto: {fileID: 21300000, guid: 69a6a5ff88fef2e4888b8252e562c810, type: 3}
 --- !u!1 &539160767
 GameObject:
   m_ObjectHideFlags: 0
@@ -10423,9 +10514,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: "Ox\xEDgeno port\xE1til"
+  descripcion: "Tanque peque\xF1o que se puede sacar de la ambulancia para dar ox\xEDgeno
+    al paciente en el lugar del incidente."
+  imagenObjeto: {fileID: 21300000, guid: 21d8763e11f04914da910e83f816136f, type: 3}
 --- !u!1 &665091152
 GameObject:
   m_ObjectHideFlags: 0
@@ -10674,9 +10766,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: "F\xE9rulas"
+  descripcion: "Soportes r\xEDgidos que inmovilizan un brazo o una pierna lesionada
+    para evitar que el hueso se mueva."
+  imagenObjeto: {fileID: 21300000, guid: 0f8e741a5d6668c42b5a4cddc1f87e51, type: 3}
 --- !u!1 &685045111
 GameObject:
   m_ObjectHideFlags: 0
@@ -10755,6 +10848,7 @@ Transform:
   - {fileID: 825469014}
   - {fileID: 1099776818}
   - {fileID: 1005069197}
+  - {fileID: 1681181754}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &688504486
@@ -11367,9 +11461,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: Jeringas para insulina
+  descripcion: "Jeringas peque\xF1as y de aguja fina, hechas espec\xEDficamente para
+    dosis exactas de insulina."
+  imagenObjeto: {fileID: 21300000, guid: a88108ef5b4bdf1418ea801b02963626, type: 3}
 --- !u!1 &725090809
 GameObject:
   m_ObjectHideFlags: 0
@@ -12173,9 +12268,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: Kit de curaciones
+  descripcion: "Sirve  para realizar procedimientos de limpieza, desinfecci\xF3n,
+    manejo de heridas, peque\xF1as cirug\xEDas o pr\xE1cticas cl\xEDnicas y de enfermer\xEDa
+    de forma as\xE9ptica."
+  imagenObjeto: {fileID: 21300000, guid: eae672bb3b03bd94eb2e30ca6497a7ad, type: 3}
 --- !u!4 &769276554 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8366593306564554475, guid: c0e97f19953fb03498aeafd901a7e627, type: 3}
@@ -12595,6 +12692,27 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 273322422}
   m_SourcePrefab: {fileID: 100100000, guid: 006c6f919c10e844680fba1b4f654e51, type: 3}
+--- !u!1 &793155802 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4214890102046805306, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+  m_PrefabInstance: {fileID: 1383262342}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &793155806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793155802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreObj: "Chaleco de extracci\xF3n"
+  descripcion: "Chaleco semirr\xEDgido que envuelve el torso y el cuello del paciente
+    para sacarlo de un veh\xEDculo sin mover su columna."
+  imagenObjeto: {fileID: 21300000, guid: 95b594457783b3e47b85e754c8c5240f, type: 3}
 --- !u!1 &801425167 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3268547315403390590, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
@@ -12968,6 +13086,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 835049352}
   m_Mesh: {fileID: 6656186872796073968, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+--- !u!1 &839095896 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2575550727840132129, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+  m_PrefabInstance: {fileID: 1383262342}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &839095900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839095896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreObj: Red atrapa potros
+  descripcion: "Red de apoyo que sostiene con cuidado al reci\xE9n nacido en el momento
+    del parto, evitando que caiga o se golpee."
+  imagenObjeto: {fileID: 21300000, guid: 81708f4f6d5f99a46bb0fe481983ad7e, type: 3}
 --- !u!1 &841444452
 GameObject:
   m_ObjectHideFlags: 0
@@ -13801,7 +13940,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Coloca los objetos en su lugar:  0/49
+  m_text: 'Coloca los objetos en su lugar:  0/50
 
 
 '
@@ -14514,9 +14653,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: DEA
+  descripcion: "Desfibrilador Externo Autom\xE1tico: analiza el ritmo cardiaco por
+    s\xED solo y gu\xEDa al usuario paso a paso, pensado para que lo pueda operar
+    personal con poco entrenamiento."
+  imagenObjeto: {fileID: 21300000, guid: 4f9e93c8d01aa5649ad3761323bef4bb, type: 3}
 --- !u!1 &968239426 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6530750710581249120, guid: 388b740f7906b1b4ab4bb69f4a0b7cb3, type: 3}
@@ -14918,9 +15059,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: Cinta umbilical
+  descripcion: "Cinta est\xE9ril que se usa para pinzar el cord\xF3n umbilical tras
+    un parto de emergencia, antes de cortarlo."
+  imagenObjeto: {fileID: 21300000, guid: 5d2fd0794e2f17e42a761a27ecc8792d, type: 3}
 --- !u!1 &1003104087
 GameObject:
   m_ObjectHideFlags: 0
@@ -15295,9 +15437,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: Caja tijeras, rastrillos
+  descripcion: "Contiene tijeras Mayo, oftalmoscopio y rastrillos desechables para
+    apoyar en la atenci\xF3n y procedimientos b\xE1sicos dentro de la ambulancia."
+  imagenObjeto: {fileID: 21300000, guid: 4ef77e246445e5b4e86bccf9813d4719, type: 3}
 --- !u!1 &1056490009
 GameObject:
   m_ObjectHideFlags: 0
@@ -15618,7 +15761,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -73, y: 60}
+  m_AnchoredPosition: {x: -73, y: 67}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1095833685
@@ -15643,8 +15786,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 358912de4c46a9e408eaf4fa5855e447, type: 2}
-  m_sharedMaterial: {fileID: 1411361658993447152, guid: 358912de4c46a9e408eaf4fa5855e447, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e86adfc120af01145b9534e31d2d54c3, type: 2}
+  m_sharedMaterial: {fileID: 731104275106657512, guid: e86adfc120af01145b9534e31d2d54c3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -15668,8 +15811,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45
-  m_fontSizeBase: 45
+  m_fontSize: 55
+  m_fontSizeBase: 55
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -15704,7 +15847,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -155.1179, y: 0, z: -324.06677, w: -152.7999}
+  m_margin: {x: -155.1179, y: 0, z: -324.06677, w: -80.13231}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -16023,9 +16166,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: Equipo de venoclisis
+  descripcion: "Sirve para administrar l\xEDquidos, medicamentos, nutrientes o sangre
+    directamente al torrente sangu\xEDneo de un paciente a trav\xE9s de una v\xEDa
+    intravenosa."
+  imagenObjeto: {fileID: 21300000, guid: 97eb21d4f83f50f468e6256937c1a7e8, type: 3}
 --- !u!1 &1114496642
 GameObject:
   m_ObjectHideFlags: 0
@@ -16593,9 +16738,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: Caja de herramientas
+  descripcion: "Juego b\xE1sico de herramientas de mano para resolver imprevistos
+    mec\xE1nicos o de rescate."
+  imagenObjeto: {fileID: 21300000, guid: 0f2d02697b7201944ab7193d41d2f94b, type: 3}
 --- !u!1 &1140738109
 GameObject:
   m_ObjectHideFlags: 0
@@ -16738,9 +16884,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: "Collar\xEDn ajustable"
+  descripcion: "Se coloca en el cuello para evitar movimientos que agraven una lesi\xF3n
+    de columna; su tama\xF1o se puede regular seg\xFAn el paciente."
+  imagenObjeto: {fileID: 21300000, guid: 8c764ce3deeb0344686cded1ebf56abd, type: 3}
 --- !u!4 &1148863094 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8366593306564554475, guid: c0e97f19953fb03498aeafd901a7e627, type: 3}
@@ -17031,6 +17178,91 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8366593306564554475, guid: c0e97f19953fb03498aeafd901a7e627, type: 3}
   m_PrefabInstance: {fileID: 1182704670}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1185312603 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -9131684977923086884, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+  m_PrefabInstance: {fileID: 1383262342}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1185312607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185312603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreObj: Llave de cruz
+  descripcion: Herramienta para aflojar y apretar las tuercas de la rueda al cambiar
+    una llanta.
+  imagenObjeto: {fileID: 21300000, guid: 50d1db7b74781e944aa51328b53b48da, type: 3}
+--- !u!54 &1185312608
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185312603}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_Constraints: 0
+  m_CollisionDetection: 2
+--- !u!65 &1185312609
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185312603}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0020126367, y: 0.0033661835, z: 0.0029236332}
+  m_Center: {x: -0.000003119058, y: -0.00000499742, z: -0.000002105953}
+--- !u!114 &1185312610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185312603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb4415e2802db74daa15c81ce7a4dcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objetosColocados: Llavecruz
+  colocadoCorrectamente: 0
+  posicionInicial: {x: 0, y: 0, z: 0}
+  rotacionInicial: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1190481637
 GameObject:
   m_ObjectHideFlags: 0
@@ -17359,9 +17591,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: "C\xF3modo"
+  descripcion: Recipiente para que un paciente que no puede levantarse haga sus necesidades
+    de forma acostada.
+  imagenObjeto: {fileID: 21300000, guid: 99d7257aa0908944d813a55fbcdc3d91, type: 3}
 --- !u!1 &1207677191
 GameObject:
   m_ObjectHideFlags: 0
@@ -18178,9 +18411,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: Abatelenguas
+  descripcion: "Paleta de madera o pl\xE1stico que se usa para revisar la garganta
+    y la boca del paciente; tambi\xE9n sirve como f\xE9rula improvisada para dedos."
+  imagenObjeto: {fileID: 21300000, guid: e2ed4b2b6b5322047b2c03f95e05fd78, type: 3}
 --- !u!1 &1269048757
 GameObject:
   m_ObjectHideFlags: 0
@@ -18871,7 +19105,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -19053,9 +19287,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: "Term\xF3metro"
+  descripcion: Mide la temperatura corporal del paciente en segundos, clave para
+    detectar fiebre o hipotermia.
+  imagenObjeto: {fileID: 21300000, guid: d769e8d7f6011044ea8ffc1f41a6ceae, type: 3}
 --- !u!114 &1358561779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19068,9 +19303,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: "Gluc\xF3metro"
+  descripcion: "Mide el nivel de az\xFAcar en la sangre con una gota, fundamental
+    para atender emergencias relacionadas con diabetes."
+  imagenObjeto: {fileID: 21300000, guid: 62cffdea6aebf484786b6ba53a15e2d9, type: 3}
 --- !u!1 &1361629219
 GameObject:
   m_ObjectHideFlags: 0
@@ -19433,6 +19669,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -9131684977923086884, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+      propertyPath: m_TagString
+      value: drag
+      objectReference: {fileID: 0}
     - target: {fileID: -9079747850176094513, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.013234
@@ -19531,7 +19771,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8559290367515659891, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.021236002
+      value: -0.01113
       objectReference: {fileID: 0}
     - target: {fileID: -8559290367515659891, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -19683,7 +19923,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5875813829168578413, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0878
+      value: 0.07696
       objectReference: {fileID: 0}
     - target: {fileID: -5875813829168578413, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -20303,7 +20543,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2333189718607137354, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.039
+      value: 0.0322
       objectReference: {fileID: 0}
     - target: {fileID: 2333189718607137354, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -20311,7 +20551,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2333189718607137354, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.1047
+      value: 0.0975
       objectReference: {fileID: 0}
     - target: {fileID: 2361623182191875169, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20665,6 +20905,46 @@ PrefabInstance:
       propertyPath: m_TagString
       value: drag
       objectReference: {fileID: 0}
+    - target: {fileID: 8570075251632090221, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.04416
+      objectReference: {fileID: 0}
+    - target: {fileID: 8570075251632090221, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0085
+      objectReference: {fileID: 0}
+    - target: {fileID: 8570075251632090221, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.08129
+      objectReference: {fileID: 0}
+    - target: {fileID: 8570075251632090221, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.65434617
+      objectReference: {fileID: 0}
+    - target: {fileID: 8570075251632090221, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.14639518
+      objectReference: {fileID: 0}
+    - target: {fileID: 8570075251632090221, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.20631962
+      objectReference: {fileID: 0}
+    - target: {fileID: 8570075251632090221, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.71262324
+      objectReference: {fileID: 0}
+    - target: {fileID: 8570075251632090221, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -29.055
+      objectReference: {fileID: 0}
+    - target: {fileID: 8570075251632090221, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -4.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 8570075251632090221, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -93.839
+      objectReference: {fileID: 0}
     - target: {fileID: 8856491278385141011, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.0003034787
@@ -20917,6 +21197,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5311166135884122320, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1265181076}
+    - targetCorrespondingSourceObject: {fileID: 5753611926590276209, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1631688201}
     - targetCorrespondingSourceObject: {fileID: -6997745676117167191, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 285031090}
@@ -20980,12 +21263,18 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6701285140765824218, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 103754732}
+    - targetCorrespondingSourceObject: {fileID: 4721759014001524604, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 231946699}
     - targetCorrespondingSourceObject: {fileID: -7845873880692246034, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2083370282}
     - targetCorrespondingSourceObject: {fileID: -7845873880692246034, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2083370281}
+    - targetCorrespondingSourceObject: {fileID: 2575550727840132129, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 839095900}
     - targetCorrespondingSourceObject: {fileID: 951314934992582458, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 530485519}
@@ -20998,6 +21287,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 951314934992582458, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 530485523}
+    - targetCorrespondingSourceObject: {fileID: -6757705144738127878, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1933250073}
     - targetCorrespondingSourceObject: {fileID: -1591558185981419638, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1105078401}
@@ -21031,6 +21323,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 980535170727375203, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1140174687}
+    - targetCorrespondingSourceObject: {fileID: 1097273794704112498, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 381811348}
+    - targetCorrespondingSourceObject: {fileID: -398925132133204948, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 279513253}
+    - targetCorrespondingSourceObject: {fileID: -4214890102046805306, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 793155806}
     - targetCorrespondingSourceObject: {fileID: -5463794833982537009, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1001907533}
@@ -21478,6 +21779,18 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1950506484649396419, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 477768970}
+    - targetCorrespondingSourceObject: {fileID: -9131684977923086884, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1185312607}
+    - targetCorrespondingSourceObject: {fileID: -9131684977923086884, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1185312610}
+    - targetCorrespondingSourceObject: {fileID: -9131684977923086884, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1185312609}
+    - targetCorrespondingSourceObject: {fileID: -9131684977923086884, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1185312608}
     - targetCorrespondingSourceObject: {fileID: 4431431707022625080, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 387827982}
@@ -21571,6 +21884,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3053458380775431944, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 486722277}
+    - targetCorrespondingSourceObject: {fileID: 3053458380775431944, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 486722283}
     - targetCorrespondingSourceObject: {fileID: -1390715871534131378, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1795363670}
@@ -21826,9 +22142,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: Gasas
+  descripcion: "Cuadros de tela est\xE9ril, la base para limpiar y cubrir heridas
+    antes de vendarlas."
+  imagenObjeto: {fileID: 21300000, guid: 6d4ff2e1347c40e4599d5a9e9b8ab06b, type: 3}
 --- !u!114 &1383262361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21841,9 +22158,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: "Collar\xEDn"
+  descripcion: "Collar\xEDn de talla fija, pensado para el cuello de un paciente
+    adulto."
+  imagenObjeto: {fileID: 21300000, guid: 6a297def5e6173947b39b65161f1d535, type: 3}
 --- !u!1 &1385033187
 GameObject:
   m_ObjectHideFlags: 0
@@ -22439,9 +22757,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: Estetoscopio biauricular
+  descripcion: "El estetoscopio cl\xE1sico, usado para escuchar los sonidos del coraz\xF3n,
+    los pulmones y la presi\xF3n arterial."
+  imagenObjeto: {fileID: 21300000, guid: c269ded806c6a40479700a1cddda4b2c, type: 3}
 --- !u!1 &1450489184 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9379b493a89420b46a74203a7b972d04, type: 3}
@@ -22528,9 +22847,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: Bacinica
+  descripcion: "Recipiente similar al c\xF3modo, usado como orinal port\xE1til para
+    pacientes con movilidad reducida."
+  imagenObjeto: {fileID: 21300000, guid: 6fe5cc4f289b08c419d78541359213ba, type: 3}
 --- !u!1 &1469468378 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2144499046127913374, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
@@ -23317,9 +23637,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: Kit de limpieza
+  descripcion: "Contiene los productos para desinfectar el equipo y el interior de
+    la ambulancia despu\xE9s de cada servicio, evitando contagios entre pacientes."
+  imagenObjeto: {fileID: 21300000, guid: b37490df38fe7e54eb038b156edfa691, type: 3}
 --- !u!1001 &1541537246
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23590,9 +23911,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: Cubrebocas
+  descripcion: "Mascarilla b\xE1sica que protege a la tripulaci\xF3n y al paciente
+    de contagios por v\xEDa respiratoria."
+  imagenObjeto: {fileID: 21300000, guid: 7ca0d639f7308fb479b0fff4f8553603, type: 3}
 --- !u!1 &1555329377
 GameObject:
   m_ObjectHideFlags: 0
@@ -24304,6 +24626,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8366593306564554475, guid: c0e97f19953fb03498aeafd901a7e627, type: 3}
   m_PrefabInstance: {fileID: 1621104349}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1631688197 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5753611926590276209, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+  m_PrefabInstance: {fileID: 1383262342}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1631688201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631688197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreObj: Dispositivo de aislamiento
+  descripcion: "Equipo m\xE9dico port\xE1til dise\xF1ado para transportar de forma
+    segura a pacientes con enfermedades altamente contagiosas o infecciosas por v\xEDa
+    a\xE9rea."
+  imagenObjeto: {fileID: 21300000, guid: cd2096c4697ab124a8e49c3327d58aee, type: 3}
 --- !u!114 &1634337465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24649,6 +24993,84 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1674569344}
   m_Mesh: {fileID: -4098452923614149737, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+--- !u!1001 &1681181753
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 685045112}
+    m_Modifications:
+    - target: {fileID: 771140512180765758, guid: c0e97f19953fb03498aeafd901a7e627, type: 3}
+      propertyPath: zonaID
+      value: Llavecruz
+      objectReference: {fileID: 0}
+    - target: {fileID: 6126409866633616285, guid: c0e97f19953fb03498aeafd901a7e627, type: 3}
+      propertyPath: m_Name
+      value: LlaveCruz
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366593306564554475, guid: c0e97f19953fb03498aeafd901a7e627, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.16676
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366593306564554475, guid: c0e97f19953fb03498aeafd901a7e627, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.21914995
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366593306564554475, guid: c0e97f19953fb03498aeafd901a7e627, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.40049
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366593306564554475, guid: c0e97f19953fb03498aeafd901a7e627, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366593306564554475, guid: c0e97f19953fb03498aeafd901a7e627, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.564
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366593306564554475, guid: c0e97f19953fb03498aeafd901a7e627, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.846
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366593306564554475, guid: c0e97f19953fb03498aeafd901a7e627, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366593306564554475, guid: c0e97f19953fb03498aeafd901a7e627, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366593306564554475, guid: c0e97f19953fb03498aeafd901a7e627, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366593306564554475, guid: c0e97f19953fb03498aeafd901a7e627, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366593306564554475, guid: c0e97f19953fb03498aeafd901a7e627, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366593306564554475, guid: c0e97f19953fb03498aeafd901a7e627, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366593306564554475, guid: c0e97f19953fb03498aeafd901a7e627, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c0e97f19953fb03498aeafd901a7e627, type: 3}
+--- !u!4 &1681181754 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8366593306564554475, guid: c0e97f19953fb03498aeafd901a7e627, type: 3}
+  m_PrefabInstance: {fileID: 1681181753}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1690114987
 GameObject:
   m_ObjectHideFlags: 0
@@ -25317,9 +25739,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: Doppler
+  descripcion: "Aparato port\xE1til que detecta el latido del coraz\xF3n del beb\xE9
+    durante una emergencia obst\xE9trica."
+  imagenObjeto: {fileID: 21300000, guid: 943c52d5372e6994e8c62c08715aa8e5, type: 3}
 --- !u!1001 &1773999210
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26164,9 +26587,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: "Ap\xF3sitos"
+  descripcion: "Almohadillas est\xE9riles que se colocan directamente sobre una herida
+    para absorber sangre y protegerla de infecciones."
+  imagenObjeto: {fileID: 21300000, guid: a2838d2d29b98414da40eb944320f351, type: 3}
 --- !u!1 &1795363666 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1390715871534131378, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
@@ -26248,9 +26672,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: Solucion salina en bolsa
+  descripcion: Su usa es para rehidratar el cuerpo, administrar medicamentos por
+    la vena y limpiar heridas.
+  imagenObjeto: {fileID: 21300000, guid: cb2c19f420998b844bfe4e7f52e8e7ab, type: 3}
 --- !u!1001 &1796017405
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27763,6 +28188,28 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1933250069 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6757705144738127878, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+  m_PrefabInstance: {fileID: 1383262342}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1933250073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1933250069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreObj: Bloques
+  descripcion: "Sirven para mantener la cabeza y el cuello de un paciente completamente
+    fijos e inm\xF3viles, evitando movimientos laterales o de rotaci\xF3n que puedan
+    empeorar una lesi\xF3n en la columna vertebral o en las cervicales."
+  imagenObjeto: {fileID: 21300000, guid: 6cc1a9792292f694eabba8fcd9d7a5d1, type: 3}
 --- !u!1 &1945943005
 GameObject:
   m_ObjectHideFlags: 0
@@ -27925,9 +28372,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: "Cat\xE9ter intravenoso"
+  descripcion: "Cat\xE9ter con aguja que se usa para canalizar una vena y poder pasar
+    sueros o medicamentos directo al torrente sangu\xEDneo."
+  imagenObjeto: {fileID: 21300000, guid: 669efcb41be2688479e18f9d429dbbea, type: 3}
 --- !u!1 &1964836725 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1678700808321665453, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
@@ -28014,9 +28462,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: "Collar\xEDn pedi\xE1trico"
+  descripcion: "Versi\xF3n reducida del collar\xEDn, hecha para el cuello de un ni\xF1o."
+  imagenObjeto: {fileID: 21300000, guid: 492001eb4d08de649bbe29035fa89be5, type: 3}
 --- !u!114 &1964836734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28029,9 +28477,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: Bolsas RPBI
+  descripcion: "Bolsas rojas para desechar material contaminado con sangre o fluidos,
+    siguiendo el protocolo de residuos peligrosos biol\xF3gico-infecciosos."
+  imagenObjeto: {fileID: 21300000, guid: 7d9125cd4a481a94293f7569966cbfc6, type: 3}
 --- !u!1 &1984018732
 GameObject:
   m_ObjectHideFlags: 0
@@ -28123,7 +28572,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 16
+  m_HorizontalAlignment: 8
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -28252,9 +28701,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: Soluciones
+  descripcion: "Distintos l\xEDquidos intravenosos que se eligen seg\xFAn lo que
+    necesite el paciente: hidrataci\xF3n, reposici\xF3n de sangre o medicamentos."
+  imagenObjeto: {fileID: 21300000, guid: a7c9d7e3b54ab4449800e27b3518f630, type: 3}
 --- !u!1001 &2004359297
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28942,9 +29392,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: Casco
+  descripcion: "Casco de protecci\xF3n para la tripulaci\xF3n durante rescates en
+    condiciones de riesgo."
+  imagenObjeto: {fileID: 21300000, guid: f1f331eb7f8e74f48a6466d51067e929, type: 3}
 --- !u!1 &2037207372 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4867451033975949436, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
@@ -29278,9 +29729,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: "Llave de tres v\xEDas"
+  descripcion: "V\xE1lvula peque\xF1a que permite dirigir el flujo de suero o medicamento
+    entre distintas l\xEDneas sin desconectar nada."
+  imagenObjeto: {fileID: 21300000, guid: e7429ffeb1e8e6f4aa2c43e2c4a40757, type: 3}
 --- !u!1 &2055515449 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8118774986957012862, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
@@ -29362,9 +29814,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: Estetoscopio de Pinard
+  descripcion: "Instrumento en forma de trompeta, sin partes electr\xF3nicas, que
+    se usa para escuchar el latido de un beb\xE9 antes de nacer."
+  imagenObjeto: {fileID: 21300000, guid: ea2d6fecc56710b44b6d090261f0f4fb, type: 3}
 --- !u!1 &2058587133 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e69000b74e393974c926899fb0dc2796, type: 3}
@@ -29451,9 +29904,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: "Faja p\xE9lvica"
+  descripcion: Banda que se ajusta alrededor de la cadera para estabilizar una fractura
+    de pelvis y reducir el sangrado interno.
+  imagenObjeto: {fileID: 21300000, guid: ce208da3435ce0b459cb39aa37913b25, type: 3}
 --- !u!1 &2067225027 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -683842641627590931, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
@@ -29604,9 +30058,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: "Ox\xEDmetro de pulso"
+  descripcion: "Se coloca en un dedo del paciente y mide, sin necesidad de piquetes,
+    el nivel de ox\xEDgeno en la sangre y el ritmo cardiaco."
+  imagenObjeto: {fileID: 21300000, guid: 5b2fd490b7d3c0c4ea20a0ef8e960e94, type: 3}
 --- !u!114 &2067225041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29619,9 +30074,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: Cofias
+  descripcion: "Cubre el cabello del param\xE9dico para mantener un campo limpio
+    durante procedimientos que requieren asepsia."
+  imagenObjeto: {fileID: 21300000, guid: 0585921ffe125dd4d9773f7cdcd1065b, type: 3}
 --- !u!4 &2071107694 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4476478809116800152, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
@@ -30510,9 +30966,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: Kit de parto
+  descripcion: "S\xE1banas y compresas est\xE9riles que se colocan alrededor de la
+    paciente para crear un \xE1rea limpia durante un parto de emergencia."
+  imagenObjeto: {fileID: 21300000, guid: f171ce366362dec48b8c054e2e730d54, type: 3}
 --- !u!82 &2113533786
 AudioSource:
   m_ObjectHideFlags: 0
@@ -30690,9 +31147,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: 
-  descripcion: 
-  imagenObjeto: {fileID: 0}
+  nombreObj: Extintor
+  descripcion: Equipo de seguridad para apagar un conato de incendio en la ambulancia
+    o en la escena.
+  imagenObjeto: {fileID: 21300000, guid: be6106382429109428a2a3da3da9b366, type: 3}
 --- !u!1 &2127440568
 GameObject:
   m_ObjectHideFlags: 0
