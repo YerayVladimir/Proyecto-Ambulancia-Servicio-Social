@@ -7,6 +7,10 @@ public class AbrirPuerta : MonoBehaviour
     public Animator animador;
     public float distanciaActivacion = 3f;
     public Transform jugador;
+
+    public AudioSource audioSource;
+    public AudioClip sonidoPuerta;
+
     private bool yaAbierta = false;
 
     void Update()
@@ -18,6 +22,12 @@ public class AbrirPuerta : MonoBehaviour
         if (distancia <= distanciaActivacion)
         {
             animador.SetBool("abierta", true);
+
+            if (audioSource != null)
+            {
+                audioSource.PlayOneShot(sonidoPuerta);
+            }
+
             yaAbierta = true;
         }
     }
