@@ -3,68 +3,71 @@ using UnityEngine.SceneManagement;
 
 public class menuPausa : MonoBehaviour
 {
-    public GameObject panelPausa;
-    public GameObject panelOpciones;
-    public GameObject puntero;
+    public GameObject panelPausa, panelOpciones, puntero, canvaPanelInfo;
     public static bool estaPausado;
 
     void Start()
     {
         Time.timeScale = 1;
         panelPausa.SetActive(false);
-        Debug.Log("menuPausa iniciado");
     }
 
     private void Update()
     {
+        
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            puntero.SetActive(false);
-            // Hace que el cursor sea visible
-            Cursor.visible = true;
-
-            // Libera el ratón para que pueda moverse por toda la pantalla
-            Cursor.lockState = CursorLockMode.None;
-
+            if (estaPausado == false)
+            {
+                pausa();
+            }
+            else if (estaPausado)
+            {
+                continuar();
+            }
             if (panelOpciones.activeSelf)
             {
                 return;
             }
+            /*puntero.SetActive(false);
+            // Hace que el cursor sea visible
+            Cursor.visible = true;
+
+            // Libera el ratï¿½n para que pueda moverse por toda la pantalla
+            Cursor.lockState = CursorLockMode.None;
+
 
             if (estaPausado)
             {
                 continuar();
             }
-            else
-            {
-                pausa();
-            }
+            */
         }
     }
     public void pausa()
     {
         panelPausa.SetActive(true);
-
-        Time.timeScale = 0;
         estaPausado = true;
-
-        Debug.Log("Simulación en pausa");
-        Debug.Log(panelPausa.name);
+        Time.timeScale = 0;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        if(inspectorObjetos.inspecting == true)
+        {
+            canvaPanelInfo.SetActive(false);
+        }
     }
 
     public void continuar()
     {
         panelPausa.SetActive(false);
-        puntero.SetActive(true);
-        // Hace que el cursor sea visible
-        Cursor.visible = false;
-        // Libera el ratón para que pueda moverse por toda la pantalla
-        Cursor.lockState = CursorLockMode.Locked;
-
-        Time.timeScale = 1;
         estaPausado = false;
-
-        Debug.Log("Continúa la simulación");
+        Time.timeScale = 1;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        if(inspectorObjetos.inspecting == true)
+        {
+            canvaPanelInfo.SetActive(true);
+        }
     }
 
     public void reiniciar()
@@ -74,8 +77,6 @@ public class menuPausa : MonoBehaviour
         puntero.SetActive(true);
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-
-        Debug.Log("Reiniciando simulación");
     }
 
     public void menuPrincipal()
@@ -86,7 +87,5 @@ public class menuPausa : MonoBehaviour
         estaPausado = false;
 
         SceneManager.LoadScene("menuPrincipal");
-
-        Debug.Log("Volviste al menú");
     }
 }

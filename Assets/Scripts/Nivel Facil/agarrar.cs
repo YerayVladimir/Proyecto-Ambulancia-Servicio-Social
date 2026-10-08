@@ -1,193 +1,3 @@
-/*using UnityEngine;
-
-public class agarrar : MonoBehaviour
-{
-    public float distaciaAgarre = 3f;
-    public float velociadadMovimiento = 15f;
-    public Transform puntoDeSujecion;
-
-    public posicionamientoUI interfazPosicionamiento;
-
-    private GameObject objetoAgarrado;
-    private Rigidbody rigidbodyAgarrado;
-
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            if (objetoAgarrado == null)
-            {
-                intentarAgarrar();
-            }
-            else
-            {
-                soltarObjeto();
-            }
-        }
-    }
-
-    private void FixedUpdate()
-    {
-        if (objetoAgarrado != null)
-        {
-            moverObjeto();
-        }
-    }
-
-    void intentarAgarrar()
-    {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-
-        if (Physics.Raycast(ray, out hit, distaciaAgarre))
-        {
-            if (hit.collider.CompareTag("drag"))
-            {
-                objetoAgarrado = hit.collider.gameObject;
-                rigidbodyAgarrado = objetoAgarrado.GetComponent<Rigidbody>();
-
-                objetoAgarrable objetoAgarrableActual = objetoAgarrado.GetComponent<objetoAgarrable>();
-
-                if (objetoAgarrableActual != null)
-                {
-                    mostrarSoloZonaCorrecta(objetoAgarrableActual.objetosColocados);
-                }
-
-                if (rigidbodyAgarrado == null)
-                {
-                    objetoAgarrado = null;
-                    return;
-                }
-
-                rigidbodyAgarrado.useGravity = false;
-                rigidbodyAgarrado.isKinematic = true;
-                rigidbodyAgarrado.drag = 10;
-                rigidbodyAgarrado.freezeRotation = true;
-                rigidbodyAgarrado.WakeUp();
-                congelarOtrosObjetos(true);
-            }
-        }
-    }
-
-    void mostrarSoloZonaCorrecta(string idObjeto)
-    {
-        ubicacionZona[] zonas = FindObjectsByType<ubicacionZona>(FindObjectsSortMode.None);
-        foreach (ubicacionZona zona in zonas)
-        {
-            if (zona.visual != null)
-            {
-                zona.visual.SetActive(zona.zonaID == idObjeto);
-            }
-        }
-    }
-
-    void ocultarTodasLasZonas()
-    {
-        ubicacionZona[] zonas = FindObjectsByType<ubicacionZona>(FindObjectsSortMode.None);
-        foreach (ubicacionZona zona in zonas)
-        {
-            if (zona.visual != null)
-            {
-                zona.visual.SetActive(false);
-            }
-        }
-    }
-
-    void moverObjeto()
-    {
-        rigidbodyAgarrado.MovePosition(Vector3.Lerp(objetoAgarrado.transform.position, puntoDeSujecion.position, Time.fixedDeltaTime * velociadadMovimiento));
-    }
-
-    void soltarObjeto()
-    {
-        bool zonaCorrecta = false;
-
-        objetoAgarrable objetoAgarrableActual = objetoAgarrado.GetComponent<objetoAgarrable>();
-
-        Collider[] colliders = Physics.OverlapSphere(objetoAgarrado.transform.position, 0.5f);
-
-        foreach (Collider colliderEncontrado in colliders)
-        {
-            ubicacionZona zona = colliderEncontrado.GetComponent<ubicacionZona>();
-
-            if (zona != null)
-            {
-                if (zona.zonaID == objetoAgarrableActual.objetosColocados)
-                {
-                    zonaCorrecta = true;
-
-                    if (!objetoAgarrableActual.colocadoCorrectamente)
-                    {
-                        objetoAgarrableActual.colocadoCorrectamente = true;
-
-                        if (interfazPosicionamiento != null)
-                        {
-                            interfazPosicionamiento.AddCorrectObject();
-                        }
-
-                        objetoAgarrado.tag = "Untagged";
-                        rigidbodyAgarrado.isKinematic = true;
-                        rigidbodyAgarrado.useGravity = false;
-                        objetoAgarrado.GetComponent<Collider>().enabled = false;
-                    }
-
-                    objetoAgarrado.transform.position = zona.transform.position;
-                    objetoAgarrado.transform.rotation = zona.transform.rotation;
-
-                    if (zona.visual != null)
-                    {
-                        zona.visual.SetActive(false);
-                    }
-
-                    ocultarTodasLasZonas();
-                    congelarOtrosObjetos(false);
-                    objetoAgarrado = null;
-                    rigidbodyAgarrado = null;
-                    return; // <- esto evita que siga ejecutando el código de abajo
-                }
-            }
-        }
-
-        if (!zonaCorrecta)
-        {
-            objetoAgarrado.transform.position = objetoAgarrableActual.posicionInicial;
-            objetoAgarrado.transform.rotation = objetoAgarrableActual.rotacionInicial;
-
-            if (interfazPosicionamiento != null)
-            {
-                interfazPosicionamiento.ShowIncorrectMessage();
-            }
-        }
-
-        rigidbodyAgarrado.useGravity = true;
-        rigidbodyAgarrado.isKinematic = false;
-        rigidbodyAgarrado.drag = 1;
-        rigidbodyAgarrado.freezeRotation = false;
-        rigidbodyAgarrado.velocity = Vector3.zero;
-        rigidbodyAgarrado.angularVelocity = Vector3.zero;
-
-        ocultarTodasLasZonas();
-        congelarOtrosObjetos(false);
-        objetoAgarrado = null;
-        rigidbodyAgarrado = null;
-    }
-
-    void congelarOtrosObjetos(bool congelar)
-    {
-        GameObject[] objetos = GameObject.FindGameObjectsWithTag("drag");
-        foreach (GameObject obj in objetos)
-        {
-            if (obj != objetoAgarrado)
-            {
-                Rigidbody rb = obj.GetComponent<Rigidbody>();
-                if (rb != null)
-                {
-                    rb.isKinematic = congelar;
-                }
-            }
-        }
-    }
-}*//*
 using System.Collections;
 using UnityEngine;
 
@@ -201,11 +11,21 @@ public class agarrar : MonoBehaviour
 
     public posicionamientoUI interfazPosicionamiento;
 
+    public AudioSource audioSource;
+    public AudioClip agarrarSound;
+    public AudioClip soltarSound;
+
     private GameObject objetoAgarrado;
     private Rigidbody rigidbodyAgarrado;
 
+    private Collider[] collidersObjeto;
+
+    public zonasManger zonasManger;
+    public panelCloseUp panelCloseUp;
+
     void Update()
     {
+        if (menuPausa.estaPausado)return;
         if (Input.GetMouseButtonDown(0))
         {
             if (objetoAgarrado == null)
@@ -258,260 +78,7 @@ public class agarrar : MonoBehaviour
                 rigidbodyAgarrado.freezeRotation = true;
                 rigidbodyAgarrado.WakeUp();
 
-                congelarOtrosObjetos(true);
-            }
-        }
-    }
-
-    void mostrarSoloZonaCorrecta(string idObjeto)
-    {
-        ubicacionZona[] zonas = FindObjectsByType<ubicacionZona>(FindObjectsSortMode.None);
-
-        foreach (ubicacionZona zona in zonas)
-        {
-            if (zona.visual != null)
-            {
-                zona.visual.SetActive(zona.zonaID == idObjeto);
-            }
-        }
-    }
-
-    void ocultarTodasLasZonas()
-    {
-        ubicacionZona[] zonas = FindObjectsByType<ubicacionZona>(FindObjectsSortMode.None);
-
-        foreach (ubicacionZona zona in zonas)
-        {
-            if (zona.visual != null)
-            {
-                zona.visual.SetActive(false);
-            }
-        }
-    }
-
-    void moverObjeto()
-    {
-        rigidbodyAgarrado.MovePosition(
-            Vector3.Lerp(
-                objetoAgarrado.transform.position,
-                puntoDeSujecion.position,
-                Time.fixedDeltaTime * velociadadMovimiento));
-    }
-
-    void soltarObjeto()
-    {
-        bool zonaCorrecta = false;
-
-        objetoAgarrable objetoAgarrableActual =
-            objetoAgarrado.GetComponent<objetoAgarrable>();
-
-        Collider[] colliders =
-            Physics.OverlapSphere(objetoAgarrado.transform.position, 0.5f);
-
-        foreach (Collider colliderEncontrado in colliders)
-        {
-            ubicacionZona zona =
-                colliderEncontrado.GetComponent<ubicacionZona>();
-
-            if (zona != null)
-            {
-                if (zona.zonaID == objetoAgarrableActual.objetosColocados)
-                {
-                    zonaCorrecta = true;
-
-                    if (!objetoAgarrableActual.colocadoCorrectamente)
-                    {
-                        objetoAgarrableActual.colocadoCorrectamente = true;
-
-                        if (interfazPosicionamiento != null)
-                        {
-                            interfazPosicionamiento.AddCorrectObject();
-                        }
-
-                        objetoAgarrado.tag = "Untagged";
-
-                        rigidbodyAgarrado.isKinematic = true;
-                        rigidbodyAgarrado.useGravity = false;
-
-                        Collider col = objetoAgarrado.GetComponent<Collider>();
-                        if (col != null)
-                        {
-                            col.enabled = false;
-                        }
-                    }
-
-                    StartCoroutine(MoverAZona(
-                        objetoAgarrado,
-                        zona.transform.position,
-                        zona.transform.rotation));
-
-                    if (zona.visual != null)
-                    {
-                        zona.visual.SetActive(false);
-                    }
-
-                    ocultarTodasLasZonas();
-                    congelarOtrosObjetos(false);
-
-                    objetoAgarrado = null;
-                    rigidbodyAgarrado = null;
-
-                    return;
-                }
-            }
-        }
-
-        if (!zonaCorrecta)
-        {
-            objetoAgarrado.transform.position =
-                objetoAgarrableActual.posicionInicial;
-
-            objetoAgarrado.transform.rotation =
-                objetoAgarrableActual.rotacionInicial;
-
-            if (interfazPosicionamiento != null)
-            {
-                interfazPosicionamiento.ShowIncorrectMessage();
-            }
-
-            rigidbodyAgarrado.useGravity = true;
-            rigidbodyAgarrado.isKinematic = false;
-            rigidbodyAgarrado.drag = 1;
-            rigidbodyAgarrado.freezeRotation = false;
-            rigidbodyAgarrado.velocity = Vector3.zero;
-            rigidbodyAgarrado.angularVelocity = Vector3.zero;
-        }
-
-        ocultarTodasLasZonas();
-        congelarOtrosObjetos(false);
-
-        objetoAgarrado = null;
-        rigidbodyAgarrado = null;
-    }
-
-    IEnumerator MoverAZona(
-        GameObject objeto,
-        Vector3 posicionDestino,
-        Quaternion rotacionDestino)
-    {
-        Vector3 posicionInicial = objeto.transform.position;
-        Quaternion rotacionInicial = objeto.transform.rotation;
-
-        float tiempo = 0f;
-
-        while (tiempo < tiempoMovimientoZona)
-        {
-            tiempo += Time.deltaTime;
-
-            float t = tiempo / tiempoMovimientoZona;
-
-            objeto.transform.position = Vector3.Lerp(
-                posicionInicial,
-                posicionDestino,
-                t);
-
-            objeto.transform.rotation = Quaternion.Lerp(
-                rotacionInicial,
-                rotacionDestino,
-                t);
-
-            yield return null;
-        }
-
-        objeto.transform.position = posicionDestino;
-        objeto.transform.rotation = rotacionDestino;
-    }
-
-    void congelarOtrosObjetos(bool congelar)
-    {
-        GameObject[] objetos =
-            GameObject.FindGameObjectsWithTag("drag");
-
-        foreach (GameObject obj in objetos)
-        {
-            if (obj != objetoAgarrado)
-            {
-                Rigidbody rb = obj.GetComponent<Rigidbody>();
-
-                if (rb != null)
-                {
-                    rb.isKinematic = congelar;
-                }
-            }
-        }
-    }
-}*/
-using System.Collections;
-using UnityEngine;
-
-public class agarrar : MonoBehaviour
-{
-    public float distaciaAgarre = 3f;
-    public float velociadadMovimiento = 15f;
-    public float tiempoMovimientoZona = 2f;
-
-    public Transform puntoDeSujecion;
-
-    public posicionamientoUI interfazPosicionamiento;
-
-    private GameObject objetoAgarrado;
-    private Rigidbody rigidbodyAgarrado;
-
-    private Collider[] collidersObjeto; //
-
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            if (objetoAgarrado == null)
-            {
-                intentarAgarrar();
-            }
-            else
-            {
-                soltarObjeto();
-            }
-        }
-    }
-
-    private void FixedUpdate()
-    {
-        if (objetoAgarrado != null)
-        {
-            moverObjeto();
-        }
-    }
-
-    void intentarAgarrar()
-    {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-
-        if (Physics.Raycast(ray, out hit, distaciaAgarre))
-        {
-            if (hit.collider.CompareTag("drag"))
-            {
-                objetoAgarrado = hit.collider.gameObject;
-                rigidbodyAgarrado = objetoAgarrado.GetComponent<Rigidbody>();
-
-                objetoAgarrable objetoAgarrableActual = objetoAgarrado.GetComponent<objetoAgarrable>();
-
-                if (objetoAgarrableActual != null)
-                {
-                    mostrarSoloZonaCorrecta(objetoAgarrableActual.objetosColocados);
-                }
-
-                if (rigidbodyAgarrado == null)
-                {
-                    objetoAgarrado = null;
-                    return;
-                }
-
-                rigidbodyAgarrado.useGravity = false;
-                rigidbodyAgarrado.isKinematic = true;
-                rigidbodyAgarrado.drag = 10;
-                rigidbodyAgarrado.freezeRotation = true;
-                rigidbodyAgarrado.WakeUp();
+                audioSource.PlayOneShot(agarrarSound);
 
                 collidersObjeto = objetoAgarrado.GetComponentsInChildren<Collider>();
                 foreach (Collider c in collidersObjeto)
@@ -521,6 +88,10 @@ public class agarrar : MonoBehaviour
 
                 congelarOtrosObjetos(true);
             }
+            if (hit.collider.CompareTag("panel"))
+            {
+                panelCloseUp.EntrarCabina();
+            }
         }
     }
 
@@ -528,11 +99,13 @@ public class agarrar : MonoBehaviour
     {
         ubicacionZona[] zonas = FindObjectsByType<ubicacionZona>(FindObjectsSortMode.None);
 
+        bool ayudaPermitida = zonasManger == null || zonasManger.ZonaHabilitada(idObjeto);
+
         foreach (ubicacionZona zona in zonas)
         {
             if (zona.visual != null)
             {
-                zona.visual.SetActive(zona.zonaID == idObjeto);
+                zona.visual.SetActive(zona.zonaID == idObjeto && ayudaPermitida);
             }
         }
     }
@@ -561,6 +134,8 @@ public class agarrar : MonoBehaviour
 
     void soltarObjeto()
     {
+        audioSource.PlayOneShot(soltarSound);
+
         bool zonaCorrecta = false;
 
         objetoAgarrable objetoAgarrableActual =
@@ -584,6 +159,7 @@ public class agarrar : MonoBehaviour
                     {
                         objetoAgarrableActual.colocadoCorrectamente = true;
 
+                        // CAMBIO 1: zona correcta suma al progreso
                         if (interfazPosicionamiento != null)
                         {
                             interfazPosicionamiento.AddCorrectObject();
@@ -593,8 +169,6 @@ public class agarrar : MonoBehaviour
 
                         rigidbodyAgarrado.isKinematic = true;
                         rigidbodyAgarrado.useGravity = false;
-
-                        // seguir sin collider (ya colocado)
                     }
 
                     StartCoroutine(MoverAZona(
@@ -626,9 +200,10 @@ public class agarrar : MonoBehaviour
             objetoAgarrado.transform.rotation =
                 objetoAgarrableActual.rotacionInicial;
 
+            // CAMBIO 2: zona incorrecta cuenta el error y muestra el mensaje
             if (interfazPosicionamiento != null)
             {
-                interfazPosicionamiento.ShowIncorrectMessage();
+                interfazPosicionamiento.RegistrarError();
             }
 
             rigidbodyAgarrado.useGravity = true;
@@ -638,7 +213,6 @@ public class agarrar : MonoBehaviour
             rigidbodyAgarrado.velocity = Vector3.zero;
             rigidbodyAgarrado.angularVelocity = Vector3.zero;
 
-           
             if (collidersObjeto != null)
             {
                 foreach (Collider c in collidersObjeto)

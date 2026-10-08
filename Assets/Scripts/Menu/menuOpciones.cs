@@ -30,7 +30,7 @@ public class menuOpciones : MonoBehaviour
     {
         float sonidoGuardado = PlayerPrefs.GetFloat("volumenSonido", 0f);
 
-        sliderSonido.value = sonidoGuardado;
+        sliderSonido.value = sonidoGuardado; //marca error 
         audioMixerSonido.SetFloat("VolumenSonido", sonidoGuardado);
 
         float musicaGuardada = PlayerPrefs.GetFloat("volumenMusica", 0f);
@@ -79,5 +79,7 @@ public class menuOpciones : MonoBehaviour
     public void sensibilidad(float valor)
     {
         PlayerPrefs.SetFloat("sensibilidad", valor);
+        float sensibilidadGuardada = PlayerPrefs.GetFloat("sensibilidad", 200f);
+        sliderSensibilidad.value = sensibilidadGuardada;
     }
 }
