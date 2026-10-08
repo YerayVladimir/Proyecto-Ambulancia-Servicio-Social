@@ -20,7 +20,7 @@ public class inspectorObjetos : MonoBehaviour
     public float maxDistance = 5f;
 
     private objetoInspeccion currentObject;
-    private bool inspecting = false;
+    public static bool inspecting = false;
 
     void Start()
     {
@@ -49,8 +49,7 @@ public class inspectorObjetos : MonoBehaviour
     void DetectObject()
     {
         // Si estamos inspeccionando, no cambiamos el objeto
-        if (inspecting)
-            return;
+        if (inspecting) return;
 
         Ray ray = playerCamera.ScreenPointToRay(Input.mousePosition);
 
