@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class menuPausa : MonoBehaviour
 {
-    public GameObject panelPausa, panelOpciones, puntero;
+    public GameObject panelPausa, panelOpciones, puntero, canvaPanelInfo;
     public static bool estaPausado;
 
     void Start()
@@ -51,6 +51,10 @@ public class menuPausa : MonoBehaviour
         Time.timeScale = 0;
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
+        if(inspectorObjetos.inspecting == true)
+        {
+            canvaPanelInfo.SetActive(false);
+        }
     }
 
     public void continuar()
@@ -60,6 +64,10 @@ public class menuPausa : MonoBehaviour
         Time.timeScale = 1;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        if(inspectorObjetos.inspecting == true)
+        {
+            canvaPanelInfo.SetActive(true);
+        }
     }
 
     public void reiniciar()
