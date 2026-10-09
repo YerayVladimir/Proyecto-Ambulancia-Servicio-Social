@@ -4317,6 +4317,27 @@ MonoBehaviour:
   descripcion: "Juego de correas que se cruza sobre el cuerpo del paciente para sujetarlo
     firmemente a la camilla r\xEDgida durante el traslado."
   imagenObjeto: {fileID: 21300000, guid: 198781e3f6e53574782ff5cd6728601c, type: 3}
+--- !u!65 &231946703
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231946695}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.006672497, y: 0.017233271, z: 0.0007989291}
+  m_Center: {x: -0.000017918115, y: 0.0019049097, z: -0.0003157745}
 --- !u!1 &240253029 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8829131863759860387, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
@@ -5004,6 +5025,27 @@ MonoBehaviour:
   descripcion: Tabla plana y firme que se usa para inmovilizar la columna de pacientes
     con sospecha de trauma antes de moverlos.
   imagenObjeto: {fileID: 21300000, guid: abe26acf379f2c44bb4ae057f2d347f8, type: 3}
+--- !u!65 &279513257
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279513249}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0079873055, y: 0.020454962, z: 0.00077531644}
+  m_Center: {x: -0.000011436832, y: 0.00001706763, z: -0.0003127185}
 --- !u!1 &280029610 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6530750710581249120, guid: 388b740f7906b1b4ab4bb69f4a0b7cb3, type: 3}
@@ -6309,6 +6351,27 @@ MonoBehaviour:
   descripcion: La camilla principal con ruedas y base plegable, la que se usa para
     subir y bajar al paciente de la ambulancia.
   imagenObjeto: {fileID: 21300000, guid: ef0ed306b185aa24f82a85f855b8dc1a, type: 3}
+--- !u!65 &381811352
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381811344}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.02318042, y: 0.0076972926, z: 0.009113543}
+  m_Center: {x: -0.0000000021723756, y: -0.0019216994, z: 3.6206255e-10}
 --- !u!1 &387827978 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4431431707022625080, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
@@ -7153,6 +7216,132 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 416652173}
   m_Mesh: {fileID: 7012554011288724375, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+--- !u!1 &416957003
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 416957004}
+  - component: {fileID: 416957008}
+  - component: {fileID: 416957007}
+  - component: {fileID: 416957006}
+  - component: {fileID: 416957005}
+  m_Layer: 0
+  m_Name: camilla (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &416957004
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416957003}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.7457456, z: -0, w: 0.6662309}
+  m_LocalPosition: {x: 0.1384, y: 0.006, z: 0.0074}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1796709319}
+  m_LocalEulerAnglesHint: {x: 0, y: -96.446, z: 0}
+--- !u!65 &416957005
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416957003}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.02318042, y: 0.008986638, z: 0.009113543}
+  m_Center: {x: 0.0000000021723756, y: -0.0012770254, z: -0.000000010861877}
+--- !u!114 &416957006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416957003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreObj: Camilla
+  descripcion: La camilla principal con ruedas y base plegable, la que se usa para
+    subir y bajar al paciente de la ambulancia.
+  imagenObjeto: {fileID: 21300000, guid: ef0ed306b185aa24f82a85f855b8dc1a, type: 3}
+--- !u!23 &416957007
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416957003}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: e7fa64d803819ae47a7df9ac47cbb5d7, type: 2}
+  - {fileID: 2100000, guid: 8c00d0ad01bb9f7429d2ebee1fdef2f4, type: 2}
+  - {fileID: 2100000, guid: 295d09e9d3765064bbda79955a61f920, type: 2}
+  - {fileID: 2100000, guid: 086c0c4b46ec807469d47020fcab9430, type: 2}
+  - {fileID: 2100000, guid: 48aa15cc7c3b5844eb79aaeb44a53c74, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &416957008
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416957003}
+  m_Mesh: {fileID: 6297216546034723709, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
 --- !u!1 &433258622
 GameObject:
   m_ObjectHideFlags: 0
@@ -11872,6 +12061,130 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!1 &738112915
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 738112916}
+  - component: {fileID: 738112920}
+  - component: {fileID: 738112919}
+  - component: {fileID: 738112918}
+  - component: {fileID: 738112917}
+  m_Layer: 0
+  m_Name: bloques (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &738112916
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738112915}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.7457456, z: -0, w: 0.6662309}
+  m_LocalPosition: {x: 0.13913001, y: 0.010902284, z: 0.0009000001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1796709319}
+  m_LocalEulerAnglesHint: {x: 0, y: -96.446, z: 0}
+--- !u!65 &738112917
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738112915}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0038195434, y: 0.0031492459, z: 0.008500946}
+  m_Center: {x: -0.000107032574, y: -0.000060471473, z: 2.3362817e-10}
+--- !u!114 &738112918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738112915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreObj: Bloques
+  descripcion: "Sirven para mantener la cabeza y el cuello de un paciente completamente
+    fijos e inm\xF3viles, evitando movimientos laterales o de rotaci\xF3n que puedan
+    empeorar una lesi\xF3n en la columna vertebral o en las cervicales."
+  imagenObjeto: {fileID: 21300000, guid: 6cc1a9792292f694eabba8fcd9d7a5d1, type: 3}
+--- !u!23 &738112919
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738112915}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: ff9a40584c1a2b6479d9cb0ab213c627, type: 2}
+  - {fileID: 2100000, guid: 9d5292e405f3eea4995cd0b518f913db, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &738112920
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738112915}
+  m_Mesh: {fileID: 1005147747013971541, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
 --- !u!1 &747834174
 GameObject:
   m_ObjectHideFlags: 0
@@ -12825,6 +13138,27 @@ MonoBehaviour:
   descripcion: "Chaleco semirr\xEDgido que envuelve el torso y el cuello del paciente
     para sacarlo de un veh\xEDculo sin mover su columna."
   imagenObjeto: {fileID: 21300000, guid: 95b594457783b3e47b85e754c8c5240f, type: 3}
+--- !u!65 &793155807
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793155802}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.007402416, y: 0.009728689, z: 0.0012602884}
+  m_Center: {x: 0.0003749614, y: -0.000101332625, z: -0.001536772}
 --- !u!1 &801425167 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3268547315403390590, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
@@ -13219,6 +13553,27 @@ MonoBehaviour:
   descripcion: "Red de apoyo que sostiene con cuidado al reci\xE9n nacido en el momento
     del parto, evitando que caiga o se golpee."
   imagenObjeto: {fileID: 21300000, guid: 81708f4f6d5f99a46bb0fe481983ad7e, type: 3}
+--- !u!65 &839095901
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839095896}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0052266214, y: 0.009964692, z: 0.0013226175}
+  m_Center: {x: 0.0013816284, y: 0.000013037873, z: 0.000064302316}
 --- !u!1 &839799765
 GameObject:
   m_ObjectHideFlags: 0
@@ -21241,58 +21596,64 @@ PrefabInstance:
       insertIndex: 12
       addedObject: {fileID: 1056490010}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
-      insertIndex: 21
-      addedObject: {fileID: 976908275}
+      insertIndex: 18
+      addedObject: {fileID: 738112916}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       insertIndex: 22
+      addedObject: {fileID: 976908275}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+      insertIndex: 23
       addedObject: {fileID: 57868726}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
-      insertIndex: 52
+      insertIndex: 26
+      addedObject: {fileID: 416957004}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+      insertIndex: 54
       addedObject: {fileID: 1082786901}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
-      insertIndex: 53
+      insertIndex: 55
       addedObject: {fileID: 665091153}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
-      insertIndex: 67
+      insertIndex: 69
       addedObject: {fileID: 954776185}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
-      insertIndex: 68
+      insertIndex: 70
       addedObject: {fileID: 359862934}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
-      insertIndex: 71
+      insertIndex: 73
       addedObject: {fileID: 1136457282}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
-      insertIndex: 72
+      insertIndex: 74
       addedObject: {fileID: 416652174}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
-      insertIndex: 74
+      insertIndex: 76
       addedObject: {fileID: 433258623}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
-      insertIndex: 75
+      insertIndex: 77
       addedObject: {fileID: 474446114}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
-      insertIndex: 77
+      insertIndex: 79
       addedObject: {fileID: 43976242}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
-      insertIndex: 78
+      insertIndex: 80
       addedObject: {fileID: 1555329378}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
-      insertIndex: 83
+      insertIndex: 85
       addedObject: {fileID: 1803231720}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
-      insertIndex: 84
+      insertIndex: 86
       addedObject: {fileID: 1863869769}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
-      insertIndex: 86
+      insertIndex: 88
       addedObject: {fileID: 100364752}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
-      insertIndex: 87
+      insertIndex: 89
       addedObject: {fileID: 567461197}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
-      insertIndex: 89
+      insertIndex: 91
       addedObject: {fileID: 93335283}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
-      insertIndex: 90
+      insertIndex: 92
       addedObject: {fileID: 1269048758}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       insertIndex: -1
@@ -21439,6 +21800,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5753611926590276209, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1631688201}
+    - targetCorrespondingSourceObject: {fileID: 5753611926590276209, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1631688205}
     - targetCorrespondingSourceObject: {fileID: -6997745676117167191, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 285031090}
@@ -21505,6 +21869,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4721759014001524604, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 231946699}
+    - targetCorrespondingSourceObject: {fileID: 4721759014001524604, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 231946703}
     - targetCorrespondingSourceObject: {fileID: -7845873880692246034, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2083370282}
@@ -21514,6 +21881,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2575550727840132129, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 839095900}
+    - targetCorrespondingSourceObject: {fileID: 2575550727840132129, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 839095901}
     - targetCorrespondingSourceObject: {fileID: 951314934992582458, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 530485519}
@@ -21565,12 +21935,21 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1097273794704112498, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 381811348}
+    - targetCorrespondingSourceObject: {fileID: 1097273794704112498, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 381811352}
     - targetCorrespondingSourceObject: {fileID: -398925132133204948, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 279513253}
+    - targetCorrespondingSourceObject: {fileID: -398925132133204948, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 279513257}
     - targetCorrespondingSourceObject: {fileID: -4214890102046805306, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 793155806}
+    - targetCorrespondingSourceObject: {fileID: -4214890102046805306, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 793155807}
     - targetCorrespondingSourceObject: {fileID: -5463794833982537009, guid: a72793431e4ebf54aa4d5e9e20eeb00f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1001907533}
@@ -25007,6 +25386,27 @@ MonoBehaviour:
     segura a pacientes con enfermedades altamente contagiosas o infecciosas por v\xEDa
     a\xE9rea."
   imagenObjeto: {fileID: 21300000, guid: cd2096c4697ab124a8e49c3327d58aee, type: 3}
+--- !u!65 &1631688205
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631688197}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.022637635, y: 0.0071147643, z: 0.009171433}
+  m_Center: {x: -0.00004652284, y: -0.000013408018, z: -0.0000000037249437}
 --- !u!114 &1634337465
 MonoBehaviour:
   m_ObjectHideFlags: 0
