@@ -20169,6 +20169,18 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1107990849566300939, guid: 5a52fa8a51eed144ca40e4e55e57ea3b, type: 3}
+      propertyPath: m_Value
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107990849566300939, guid: 5a52fa8a51eed144ca40e4e55e57ea3b, type: 3}
+      propertyPath: m_MaxValue
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107990849566300939, guid: 5a52fa8a51eed144ca40e4e55e57ea3b, type: 3}
+      propertyPath: m_MinValue
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107990849566300939, guid: 5a52fa8a51eed144ca40e4e55e57ea3b, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 142860167}
@@ -20295,6 +20307,38 @@ PrefabInstance:
     - target: {fileID: 4570544241398120008, guid: 5a52fa8a51eed144ca40e4e55e57ea3b, type: 3}
       propertyPath: m_AnchorMin.x
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488451915846944707, guid: 5a52fa8a51eed144ca40e4e55e57ea3b, type: 3}
+      propertyPath: m_Value
+      value: 425
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488451915846944707, guid: 5a52fa8a51eed144ca40e4e55e57ea3b, type: 3}
+      propertyPath: m_MaxValue
+      value: 700
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488451915846944707, guid: 5a52fa8a51eed144ca40e4e55e57ea3b, type: 3}
+      propertyPath: m_MinValue
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488451915846944707, guid: 5a52fa8a51eed144ca40e4e55e57ea3b, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 142860167}
+    - target: {fileID: 5488451915846944707, guid: 5a52fa8a51eed144ca40e4e55e57ea3b, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: sensibilidad
+      objectReference: {fileID: 0}
+    - target: {fileID: 5521848367431166283, guid: 5a52fa8a51eed144ca40e4e55e57ea3b, type: 3}
+      propertyPath: m_Value
+      value: -15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5521848367431166283, guid: 5a52fa8a51eed144ca40e4e55e57ea3b, type: 3}
+      propertyPath: m_MaxValue
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5521848367431166283, guid: 5a52fa8a51eed144ca40e4e55e57ea3b, type: 3}
+      propertyPath: m_MinValue
+      value: -40
       objectReference: {fileID: 0}
     - target: {fileID: 5521848367431166283, guid: 5a52fa8a51eed144ca40e4e55e57ea3b, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
