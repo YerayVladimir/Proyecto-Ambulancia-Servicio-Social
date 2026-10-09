@@ -4,46 +4,39 @@ using UnityEngine.SceneManagement;
 public class menuPausa : MonoBehaviour
 {
     public GameObject panelPausa, panelOpciones, puntero, canvaPanelInfo;
+    public menuOpciones opciones; // Arrastra aquí el objeto que tiene el script menuOpciones
     public static bool estaPausado;
 
     void Start()
     {
         Time.timeScale = 1;
+        estaPausado = false;
         panelPausa.SetActive(false);
+        panelOpciones.SetActive(false);
     }
 
     private void Update()
     {
-        
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (!Input.GetKeyDown(KeyCode.Escape)) return;
+
+        // Si las opciones están abiertas, Escape solo las cierra
+        // y regresa al menú de pausa (cerrarOpciones también guarda los PlayerPrefs)
+        if (panelOpciones.activeSelf)
         {
-            if (estaPausado == false)
-            {
-                pausa();
-            }
-            else if (estaPausado)
-            {
-                continuar();
-            }
-            if (panelOpciones.activeSelf)
-            {
-                return;
-            }
-            /*puntero.SetActive(false);
-            // Hace que el cursor sea visible
-            Cursor.visible = true;
+            opciones.cerrarOpciones();
+            return;
+        }
 
-            // Libera el rat�n para que pueda moverse por toda la pantalla
-            Cursor.lockState = CursorLockMode.None;
-
-
-            if (estaPausado)
-            {
-                continuar();
-            }
-            */
+        if (estaPausado)
+        {
+            continuar();
+        }
+        else
+        {
+            pausa();
         }
     }
+
     public void pausa()
     {
         panelPausa.SetActive(true);
@@ -51,7 +44,8 @@ public class menuPausa : MonoBehaviour
         Time.timeScale = 0;
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
-        if(inspectorObjetos.inspecting == true)
+
+        if (inspectorObjetos.inspecting == true)
         {
             canvaPanelInfo.SetActive(false);
         }
@@ -64,7 +58,8 @@ public class menuPausa : MonoBehaviour
         Time.timeScale = 1;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-        if(inspectorObjetos.inspecting == true)
+
+        if (inspectorObjetos.inspecting == true)
         {
             canvaPanelInfo.SetActive(true);
         }
@@ -81,10 +76,10 @@ public class menuPausa : MonoBehaviour
 
     public void menuPrincipal()
     {
-        panelPausa.SetActive(false);
-        puntero.SetActive(false);
-        Time.timeScale = 0f;
+        Time.timeScale = 1f; // Si se queda en 0, el menú principal arranca congelado
         estaPausado = false;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
 
         SceneManager.LoadScene("menuPrincipal");
     }

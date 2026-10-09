@@ -28,8 +28,6 @@ public class movimientoCamara : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
-        // NUEVO: carga la sensibilidad guardada
-        sensibilidadMouse = PlayerPrefs.GetFloat("sensibilidad", 200f);
 
         controlador = cuerpoJugador.GetComponent<CharacterController>();
 
@@ -79,8 +77,7 @@ public class movimientoCamara : MonoBehaviour
 
     private void moverMouse()
     {
-        // NUEVO: lee la sensibilidad en vivo
-        sensibilidadMouse = PlayerPrefs.GetFloat("sensibilidad", 200f);
+        sensibilidadMouse = ConfiguracionesGlobal.Sensibilidad;
 
         float mouseX = Input.GetAxis("Mouse X") * sensibilidadMouse * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * sensibilidadMouse * Time.deltaTime;

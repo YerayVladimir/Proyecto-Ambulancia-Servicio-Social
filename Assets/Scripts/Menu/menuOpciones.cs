@@ -1,6 +1,6 @@
 using UnityEngine;
-using UnityEngine.Audio;
 using UnityEngine.UI;
+using TMPro;
 
 public class menuOpciones : MonoBehaviour
 {
@@ -9,77 +9,62 @@ public class menuOpciones : MonoBehaviour
 
     private GameObject menuAnterior;
 
-    [Header("Audio")]
-    [SerializeField] private AudioMixer audioMixerSonido;
-    [SerializeField] private AudioMixer audioMixerMusica;
-
+    [Header("Controles de UI")]
     public Slider sliderSonido;
     public Slider sliderMusica;
-
     public Slider sliderSensibilidad;
-    /*
-    // LO DEJÉ IGUAL COMO LO TENÍAS
+    public Toggle togglePantallaCompleta;
+    public TMP_Dropdown dropdownCalidad;
+
     void Start()
     {
-        float sensibilidad = PlayerPrefs.GetFloat("sensibilidad", 2f);
-
-        sliderSensibilidad.value = sensibilidad;
+        RefrescarUI();
     }
-    */
-    void Start()
+
+    // La UI siempre muestra lo guardado, sin disparar los eventos
+    private void RefrescarUI()
     {
-        float sonidoGuardado = PlayerPrefs.GetFloat("volumenSonido", 0f);
+        if (sliderSonido != null)
+            sliderSonido.SetValueWithoutNotify(ConfiguracionesGlobal.VolumenSonido);
 
-        sliderSonido.value = sonidoGuardado; //marca error 
-        audioMixerSonido.SetFloat("VolumenSonido", sonidoGuardado);
+        if (sliderMusica != null)
+            sliderMusica.SetValueWithoutNotify(ConfiguracionesGlobal.VolumenMusica);
 
-        float musicaGuardada = PlayerPrefs.GetFloat("volumenMusica", 0f);
+        if (sliderSensibilidad != null)
+            sliderSensibilidad.SetValueWithoutNotify(ConfiguracionesGlobal.Sensibilidad);
 
-        sliderMusica.value = musicaGuardada;
-        audioMixerMusica.SetFloat("VolumenMusica", musicaGuardada);
+        if (togglePantallaCompleta != null)
+            togglePantallaCompleta.SetIsOnWithoutNotify(ConfiguracionesGlobal.PantallaCompleta);
+
+        if (dropdownCalidad != null)
+            dropdownCalidad.SetValueWithoutNotify(ConfiguracionesGlobal.Calidad);
     }
+
     public void abrirOpciones(GameObject menuQueAbre)
     {
         menuAnterior = menuQueAbre;
 
         menuQueAbre.SetActive(false);
         panelOpciones.SetActive(true);
-
-        Debug.Log("Abriendo opciones desde: " + menuQueAbre.name);
+        RefrescarUI();
     }
+
     public void cerrarOpciones()
     {
+        PlayerPrefs.Save();
         panelOpciones.SetActive(false);
 
         if (menuAnterior != null)
         {
             menuAnterior.SetActive(true);
-
-            Debug.Log("Regresando a: " + menuAnterior.name);
         }
     }
-    public void pantallaCompleta(bool pantallaCompleta)
-    {
-        Screen.fullScreen = pantallaCompleta;
-    }
-    public void volumenSonido(float sonido)
-    {
-        audioMixerSonido.SetFloat("VolumenSonido", sonido);
-        PlayerPrefs.SetFloat("volumenSonido", sonido);
-    }
-    public void volumenMusica(float musica)
-    {
-        audioMixerMusica.SetFloat("VolumenMusica", musica);
-        PlayerPrefs.SetFloat("volumenMusica", musica);
-    }
-    public void resolucion(int index)
-    {
-        QualitySettings.SetQualityLevel(index);
-    }
-    public void sensibilidad(float valor)
-    {
-        PlayerPrefs.SetFloat("sensibilidad", valor);
-        float sensibilidadGuardada = PlayerPrefs.GetFloat("sensibilidad", 200f);
-        sliderSensibilidad.value = sensibilidadGuardada;
-    }
+
+    public void volumenSonido(float valor) { ConfiguracionesGlobal.SetVolumenSonido(valor); }
+    public void volumenMusica(float valor) { ConfiguracionesGlobal.SetVolumenMusica(valor); }
+    public void sensibilidad(float valor) { ConfiguracionesGlobal.SetSensibilidad(valor); }
+    public void pantallaCompleta(bool activa) { ConfiguracionesGlobal.SetPantallaCompleta(activa); }
+
+    // Antes se llamaba "resolucion", pero cambia la CALIDAD gráfica
+    public void calidad(int index) { ConfiguracionesGlobal.SetCalidad(index); }
 }
