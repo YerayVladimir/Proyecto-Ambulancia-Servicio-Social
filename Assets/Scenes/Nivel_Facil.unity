@@ -7908,9 +7908,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0609bd09ac63d114c9b96958314a4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObj: "S\xE1banas"
-  descripcion: "S\xE1banas de tela normales, para cubrir al paciente o la camilla."
-  imagenObjeto: {fileID: 21300000, guid: e7b475c8fa10ae54784f0061a5f61a54, type: 3}
+  nombreObj: "S\xE1banas para quemados"
+  descripcion: "Sirven para proteger las lesiones de la piel contra infecciones y
+    evitar que la tela se adhiera a las heridas durante la atenci\xF3n inicial o
+    el traslado de un paciente."
+  imagenObjeto: {fileID: 21300000, guid: c39cb33f84496354a918ea619808bfb9, type: 3}
 --- !u!1 &490410437
 GameObject:
   m_ObjectHideFlags: 0
