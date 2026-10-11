@@ -137,7 +137,7 @@ public int Errores
 
     errores++;
 
-    Debug.Log("Errores: " + errores);
+   
 
     ShowIncorrectMessage();
 }
@@ -147,14 +147,7 @@ public int Errores
     {
        juegoTerminado = true;
 
-    if (gano)
-    {
-        Debug.Log("¡Ganaste! Todos los objetos colocados a tiempo.");
-    }
-    else
-    {
-        Debug.Log("¡Perdiste! Se agotó el tiempo.");
-    }
+    
 
     if (panelRetroalimentacion != null)
     {

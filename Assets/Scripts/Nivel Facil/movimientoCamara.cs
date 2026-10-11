@@ -31,15 +31,12 @@ public class movimientoCamara : MonoBehaviour
 
         controlador = cuerpoJugador.GetComponent<CharacterController>();
 
-        if (controlador == null)
-        {
-            Debug.LogError("El objeto asignado como cuerpoJugador no tiene CharacterController.");
-        }
+        
 
-        // Guardamos la posición original de la cámara
+        // Guardamos la posiciï¿½n original de la cï¿½mara
         posicionCamaraNormal = transform.localPosition;
 
-        // Creamos la posición agachada
+        // Creamos la posiciï¿½n agachada
         posicionCamaraAgachado = posicionCamaraNormal;
         posicionCamaraAgachado.y -= alturaAgachado;
     }

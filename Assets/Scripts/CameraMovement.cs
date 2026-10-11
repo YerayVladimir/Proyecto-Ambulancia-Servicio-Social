@@ -50,10 +50,10 @@ public class CameraMovement : MonoBehaviour
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
-        // Rotación vertical (mirar arriba/abajo)
+        // Rotaciï¿½n vertical (mirar arriba/abajo)
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
 
-        // Rotación horizontal (girar cuerpo)
+        // Rotaciï¿½n horizontal (girar cuerpo)
         playerBody.Rotate(Vector3.up * mouseX);
     }
 }

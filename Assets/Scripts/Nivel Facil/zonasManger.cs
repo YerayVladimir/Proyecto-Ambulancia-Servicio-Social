@@ -6,7 +6,7 @@ public class zonasManger : MonoBehaviour
 {
     public enum ModoAyuda { Todas, Porcentaje, Ninguna }
 
-    [Header("Configuración de ayuda visual")]
+    [Header("Configuraciï¿½n de ayuda visual")]
     public ModoAyuda modo = ModoAyuda.Todas;
 
     [Range(0f, 1f)]
@@ -18,7 +18,7 @@ public class zonasManger : MonoBehaviour
     {
         ubicacionZona[] zonas = FindObjectsByType<ubicacionZona>(FindObjectsSortMode.None);
 
-        // IDs únicos de todas las zonas de la escena
+        // IDs ï¿½nicos de todas las zonas de la escena
         List<string> ids = new List<string>();
         foreach (ubicacionZona zona in zonas)
         {

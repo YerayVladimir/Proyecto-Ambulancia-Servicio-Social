@@ -82,14 +82,12 @@ public class AsientoVehiculo : MonoBehaviour
     {
         if (puntoAsiento == null)
         {
-            Debug.LogError("AsientoVehiculo en '" + name + "': falta asignar Punto Asiento en el Inspector.", this);
             return;
         }
 
         Transform cuerpo = jugador.cuerpoJugador;
         if (cuerpo == null)
         {
-            Debug.LogError("movimientoCamara no tiene asignado Cuerpo Jugador.", this);
             return;
         }
 

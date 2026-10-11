@@ -15,7 +15,7 @@ public class ConfiguracionesGlobal : MonoBehaviour
     public const float DEF_SENSIBILIDAD = 425f;
 
     private static AudioMixer mixer;
-    private static float sensibilidad = DEF_SENSIBILIDAD; // en memoria: la cámara la lee cada frame
+    private static float sensibilidad = DEF_SENSIBILIDAD; // en memoria: la cï¿½mara la lee cada frame
 
     // ---------- Lectura ----------
     public static float VolumenSonido => PlayerPrefs.GetFloat("volumenSonido", DEF_VOLUMEN);
@@ -55,7 +55,7 @@ public class ConfiguracionesGlobal : MonoBehaviour
         Screen.fullScreen = activa;
     }
 
-    // ---------- Aplicación ----------
+    // ---------- Aplicaciï¿½n ----------
     private static void AplicarVolumen(string parametro, float lineal)
     {
         if (mixer == null) return;
@@ -78,10 +78,6 @@ public class ConfiguracionesGlobal : MonoBehaviour
     {
         mixer = Resources.Load<AudioMixer>(NOMBRE_MIXER);
 
-        if (mixer == null)
-        {
-            Debug.LogError("ConfiguracionesGlobal: no encontré '" + NOMBRE_MIXER + "' en Assets/Resources.");
-        }
 
         sensibilidad = PlayerPrefs.GetFloat("sensibilidad", DEF_SENSIBILIDAD);
 
@@ -92,7 +88,7 @@ public class ConfiguracionesGlobal : MonoBehaviour
 
     private void Awake()
     {
-        // Se dispara también para la primera escena, porque nos suscribimos antes de que cargue
+        // Se dispara tambiï¿½n para la primera escena, porque nos suscribimos antes de que cargue
         SceneManager.sceneLoaded += AlCargarEscena;
     }
 
