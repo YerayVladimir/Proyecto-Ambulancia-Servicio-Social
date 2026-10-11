@@ -56,5 +56,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Proyecto-Ambulancia-Servicio-Social.sln"
+    "dotnet.defaultSolution": "Proyecto-Ambulancia-Servicio-Social.sln",
+    "dotnet.preferCSharpExtension": true
 }
