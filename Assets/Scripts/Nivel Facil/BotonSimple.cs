@@ -8,7 +8,6 @@ public class BotonSimple : MonoBehaviour
 
     void OnMouseDown()
     {
-        Debug.Log("CLICK recibido en: " + gameObject.name);
 
         if (animator != null)
         {
@@ -16,7 +15,6 @@ public class BotonSimple : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("No hay Animator asignado");
         }
 
         if (audioSource != null)
